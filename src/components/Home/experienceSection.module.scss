@@ -1,0 +1,51 @@
+@import "@/app/globals.scss";
+
+.sectionContainer {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  height: 50rem;
+  position: relative;
+  overflow: hidden;
+  justify-content: flex-end;
+
+  .sectionContent {
+    color: white;
+    margin: 0;
+    position: relative;
+    width: 50%;
+    z-index: 2;
+
+    .content {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: flex-start;
+      padding: 0 7.5rem;
+      text-align: start;
+
+      h2 {
+        font-size: 3rem;
+        line-height: 52px;
+      }
+
+      p {
+        font-size: 1.25rem;
+        max-width: 34rem;
+      }
+
+      p:last-of-type {
+        width: 100%;
+        font-size: 1.875rem;
+        text-align: center;
+      }
+    }
+  }
+
+  .backgroundImage {
+    z-index: 0;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+}

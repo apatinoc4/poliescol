@@ -1,0 +1,26 @@
+@import "@/app/globals.scss";
+
+.navBar {
+  align-items: center;
+  color: $blue;
+  display: flex;
+  justify-content: flex-start;
+  padding: 1rem 6rem;
+
+  ul {
+    display: flex;
+    font-size: 1rem;
+    list-style: none;
+    margin-left: 2rem;
+    padding: 0;
+  }
+
+  li {
+    margin-right: 2rem;
+    word-wrap: break-word;
+
+    :last-child {
+      margin-right: 0;
+    }
+  }
+}
