@@ -4,7 +4,7 @@
   align-items: center;
   box-sizing: border-box;
   display: flex;
-  height: 50rem;
+  height: 41.25rem;
   position: relative;
   overflow: hidden;
   justify-content: flex-end;
@@ -28,17 +28,20 @@
       h2 {
         font-size: 3rem;
         line-height: 52px;
+        font-family: $futuraMd;
+        font-weight: lighter;
       }
 
       p {
         font-size: 1.25rem;
-        max-width: 34rem;
+        max-width: 30rem;
       }
 
       p:last-of-type {
         width: 100%;
-        font-size: 1.875rem;
-        text-align: center;
+        font-size: 2rem;
+        text-align: start;
+        font-family: $futuraHv;
       }
     }
   }

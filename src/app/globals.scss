@@ -4,6 +4,18 @@ body {
   }
 }
 
+//colors
+
 $dark-gray: #292929;
 $blue: #004a99;
 $red: #e2001a;
+
+//traslucent bgs
+
+$blue-tlbg: rgba(0, 74, 153, 0.9);
+$red-tlbg: rgba(226, 0, 26, 0.9);
+
+//fonts
+
+$futuraMd: var(--futuraMd);
+$futuraHv: var(--futuraHv);

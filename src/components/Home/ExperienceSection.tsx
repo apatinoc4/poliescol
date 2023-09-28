@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./experienceSection.module.scss";
 import Image from "next/image";
+import Button from "@/components/Button";
 
 const ExperienceSection = () => {
   return (
@@ -15,7 +16,7 @@ const ExperienceSection = () => {
             automotriz, metalmecánica y constructora.
           </p>
           <p>Más de 50 años de experiencia</p>
-          <button>Conoce más</button>
+          <Button text="Conoce más" />
         </div>
       </div>
       <Image

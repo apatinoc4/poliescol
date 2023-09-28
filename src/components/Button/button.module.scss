@@ -1,0 +1,23 @@
+@import "@/app/globals.scss";
+
+.button {
+  background-color: white;
+  border: none;
+  font-size: 1.25rem;
+  padding: 0.625rem;
+  border-radius: 7px;
+  cursor: pointer;
+
+  &.blueFont {
+    color: $blue;
+  }
+
+  &.redFont {
+    color: $red;
+  }
+
+  &.redBody {
+    color: white;
+    background-color: $red;
+  }
+}

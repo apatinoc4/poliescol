@@ -1,0 +1,81 @@
+@import "@/app/globals.scss";
+
+.container {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+
+  &.left {
+    flex-direction: row;
+    height: 41.25rem;
+  }
+
+  &.right {
+    flex-direction: row-reverse;
+    height: 47.5rem;
+  }
+
+  .sectionContent {
+    position: relative;
+    height: 100%;
+    box-sizing: border-box;
+
+    &.left {
+      width: 40%;
+    }
+
+    &.right {
+      width: 44%;
+    }
+
+    .textContent {
+      position: relative;
+      display: flex;
+      box-sizing: border-box;
+      height: 100%;
+      z-index: 1;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &.left {
+        background-color: $blue-tlbg;
+        padding: 7rem 9.5rem 7rem 7.125rem;
+      }
+
+      &.right {
+        background-color: $red-tlbg;
+        padding: 7rem 8rem 7rem 9.5rem;
+      }
+    }
+
+    .text {
+      color: white;
+      h2 {
+        font-size: 3rem;
+        font-family: $futuraHv;
+        width: 26.75rem;
+      }
+
+      p {
+        font-size: 1.25rem;
+        width: 20.25rem;
+      }
+    }
+
+    .backgroundImage {
+      z-index: 0;
+    }
+  }
+
+  .coverImage {
+    position: relative;
+    width: 60%;
+    height: 100%;
+
+    .backgroundImage {
+      z-index: 0;
+    }
+  }
+}

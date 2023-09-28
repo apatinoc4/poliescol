@@ -1,8 +1,7 @@
 import "./globals.scss";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+import { futuraBk, futuraMd, futuraHV } from "@/fonts/index";
 
 export const metadata: Metadata = {
   title: "Poliescol",
@@ -16,7 +15,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} body`}>{children}</body>
+      <body
+        className={`${futuraBk.className} ${futuraMd.variable} ${futuraHV.variable} body`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
