@@ -1,5 +1,8 @@
 import React, { FC, PropsWithChildren } from "react";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+
+Footer;
 
 const Layout: FC<PropsWithChildren> = ({ children }) => {
   return (
@@ -8,6 +11,9 @@ const Layout: FC<PropsWithChildren> = ({ children }) => {
         <Header />
       </header>
       <main>{children}</main>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 };

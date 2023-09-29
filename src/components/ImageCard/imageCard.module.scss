@@ -1,0 +1,25 @@
+@import "@/app/globals.scss";
+
+.container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: flex-end;
+  width: 16.5rem;
+  height: 19.875rem;
+  border-radius: 0px 12px 0px 12px;
+  padding-bottom: 1rem;
+  overflow: hidden;
+  flex-direction: column;
+
+  p {
+    color: white;
+    font-size: $pMd;
+    z-index: 1;
+    margin: 0;
+  }
+
+  .backgroundImage {
+    z-index: 0;
+  }
+}

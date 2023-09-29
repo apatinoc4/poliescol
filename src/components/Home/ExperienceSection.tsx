@@ -20,10 +20,10 @@ const ExperienceSection = () => {
         </div>
       </div>
       <Image
-        alt="experienceSectionBg.jpeg"
+        alt="experienceSectionBg.png"
         className={styles.backgroundImage}
         fill
-        src="/experienceSectionBg.jpeg"
+        src="/experienceSectionBg.png"
         style={{ objectFit: "cover" }}
       />
     </section>

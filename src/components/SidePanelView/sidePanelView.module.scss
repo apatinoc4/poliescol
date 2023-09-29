@@ -38,6 +38,7 @@
       z-index: 1;
       flex-direction: column;
       justify-content: space-between;
+      width: 100%;
 
       &.left {
         background-color: $blue-tlbg;
@@ -59,7 +60,7 @@
       }
 
       p {
-        font-size: 1.25rem;
+        font-size: $pMd;
         width: 20.25rem;
       }
     }

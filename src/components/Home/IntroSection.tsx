@@ -19,10 +19,10 @@ const IntroSection = () => {
       </div>
       <div className={styles.gradient} />
       <Image
-        alt="introSectionBg.jpeg"
+        alt="introSectionBg.png"
         className={styles.backgroundImage}
         fill
-        src="/introSectionBg.jpeg"
+        src="/introSectionBg.png"
         style={{ objectFit: "cover" }}
       />
     </section>

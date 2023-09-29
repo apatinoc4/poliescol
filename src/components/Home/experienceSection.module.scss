@@ -26,14 +26,14 @@
       text-align: start;
 
       h2 {
-        font-size: 3rem;
+        font-size: $h2Md;
         line-height: 52px;
         font-family: $futuraMd;
         font-weight: lighter;
       }
 
       p {
-        font-size: 1.25rem;
+        font-size: $pMd;
         max-width: 30rem;
       }
 
@@ -48,7 +48,5 @@
 
   .backgroundImage {
     z-index: 0;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
   }
 }

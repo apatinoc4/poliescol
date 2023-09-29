@@ -28,7 +28,7 @@
         bottom: 0;
         content: "";
         height: 0.25rem;
-        left: 0%;
+        left: 0;
         position: absolute;
         width: 4.5rem;
       }
@@ -37,7 +37,7 @@
     }
 
     p {
-      font-size: 1.25rem;
+      font-size: $pMd;
       max-width: 34rem;
     }
   }

@@ -1,6 +1,8 @@
 import "./globals.scss";
 import type { Metadata } from "next";
 
+import clsx from "clsx";
+
 import { futuraBk, futuraMd, futuraHV } from "@/fonts/index";
 
 export const metadata: Metadata = {
@@ -16,7 +18,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${futuraBk.className} ${futuraMd.variable} ${futuraHV.variable} body`}
+        className={clsx(
+          "body",
+          futuraBk.className,
+          futuraMd.variable,
+          futuraHV.variable
+        )}
       >
         {children}
       </body>

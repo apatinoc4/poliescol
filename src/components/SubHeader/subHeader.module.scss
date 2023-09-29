@@ -1,0 +1,39 @@
+@import "@/app/globals.scss";
+
+.container {
+  display: flex;
+  position: relative;
+  padding: 0 8.25rem;
+
+  h1,
+  h2 {
+    color: white;
+    font-family: $futuraHv;
+    z-index: 2;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  &.default {
+    height: 8.25rem;
+  }
+
+  .tlCover {
+    display: flex;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $blue;
+    opacity: 0.8;
+    z-index: 1;
+  }
+
+  .backgroundImage {
+    z-index: 0;
+  }
+}

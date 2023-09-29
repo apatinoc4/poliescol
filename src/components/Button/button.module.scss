@@ -3,10 +3,11 @@
 .button {
   background-color: white;
   border: none;
-  font-size: 1.25rem;
-  padding: 0.625rem;
+  font-size: $pMd;
+  padding: 10px;
   border-radius: 7px;
   cursor: pointer;
+  width: fit-content;
 
   &.blueFont {
     color: $blue;
