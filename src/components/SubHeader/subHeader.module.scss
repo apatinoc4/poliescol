@@ -4,12 +4,17 @@
   display: flex;
   position: relative;
   padding: 0 8.25rem;
+  align-items: center;
 
   h1,
   h2 {
     color: white;
     font-family: $futuraHv;
     z-index: 2;
+  }
+
+  h1 {
+    font-size: $h1Lg;
   }
 
   h2 {

@@ -1,0 +1,30 @@
+import React from "react";
+import SubHeader from "@/components/SubHeader";
+import Image from "next/image";
+import styles from "./introSection.module.scss";
+
+const IntroSection = () => {
+  return (
+    <section className={styles.container}>
+      <SubHeader backgroundImg="aboutUsHeaderBg.jpeg" title="Sobre nosotros" />
+      <div className={styles.content}>
+        <h1>Somos una empresa especializada</h1>
+        <p>
+          el la producción y comercialización de compuestos especiales como:
+          masillas, impermeabilizantes y otros productos complementarios
+          diseñados para satisfacer las necesidades de la industria de pintura
+          automotriz, metalmecánica y constructora.
+        </p>
+        <Image
+          alt="warehouseBgAboutUs.jpeg"
+          className={styles.backgroundImage}
+          fill
+          src="/warehouseBg.jpeg"
+          style={{ objectFit: "cover" }}
+        />
+      </div>
+    </section>
+  );
+};
+
+export default IntroSection;

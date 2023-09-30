@@ -54,6 +54,7 @@ const SidePanelView = ({
           alt={panelImg}
           className={styles.backgroundImage}
           fill
+          sizes="100%"
           src={`/${panelImg}`}
           style={{ objectFit: "cover" }}
         />

@@ -57,11 +57,13 @@
         font-size: 3rem;
         font-family: $futuraHv;
         width: 26.75rem;
+        white-space: wrap;
+        margin-bottom: 1.25rem;
       }
 
       p {
         font-size: $pMd;
-        width: 20.25rem;
+        max-width: 20.25rem;
       }
     }
 

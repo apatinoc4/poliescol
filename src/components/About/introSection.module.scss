@@ -1,0 +1,29 @@
+@import "@/app/globals.scss";
+
+.container {
+  .content {
+    display: flex;
+    height: 42.7rem;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 4.5rem 6.25rem;
+
+    h1,
+    p {
+      color: white;
+      z-index: 1;
+      margin: 0;
+      max-width: 47.375rem;
+      font-size: $pMd;
+    }
+
+    h1 {
+      font-size: $titleMd;
+      font-family: $futuraMd;
+      font-weight: lighter;
+      max-width: 30.75rem;
+      margin-bottom: 1rem;
+    }
+  }
+}

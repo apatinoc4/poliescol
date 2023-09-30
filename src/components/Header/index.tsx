@@ -1,12 +1,22 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import styles from "./header.module.scss";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import clsx from "clsx";
 
 const NAV_SECTIONS = [
   {
+    id: "home",
+    label: "Inicio",
+    linkTo: "/",
+  },
+  {
     id: "about",
     label: "Sobre nosotros",
-    linkTo: "/test",
+    linkTo: "/nosotros",
   },
   {
     id: "products",
@@ -30,7 +40,12 @@ const NAV_SECTIONS = [
   },
 ];
 
+const getActivePathName = (pathName: string, currentPathname: string) =>
+  pathName === currentPathname;
+
 const Header = () => {
+  const currentPathname = usePathname();
+
   return (
     <nav className={styles.navBar}>
       <Image
@@ -41,7 +56,17 @@ const Header = () => {
       />
       <ul>
         {NAV_SECTIONS.map(({ id, label, linkTo }) => {
-          return <li key={id}>{label}</li>;
+          return (
+            <Link href={linkTo} key={id}>
+              <li
+                className={clsx({
+                  [styles.active]: getActivePathName(linkTo, currentPathname),
+                })}
+              >
+                {label}
+              </li>
+            </Link>
+          );
         })}
       </ul>
     </nav>
