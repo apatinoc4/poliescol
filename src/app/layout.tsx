@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 import clsx from "clsx";
 
-import { futuraBk, futuraMd, futuraHV } from "@/fonts/index";
+import { futuraBk, futuraLt, futuraMd, futuraHV } from "@/fonts/index";
 
 export const metadata: Metadata = {
   title: "Poliescol",
@@ -21,6 +21,7 @@ export default function RootLayout({
         className={clsx(
           "body",
           futuraBk.className,
+          futuraLt.variable,
           futuraMd.variable,
           futuraHV.variable
         )}

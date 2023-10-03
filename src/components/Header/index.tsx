@@ -9,11 +9,6 @@ import clsx from "clsx";
 
 const NAV_SECTIONS = [
   {
-    id: "home",
-    label: "Inicio",
-    linkTo: "/",
-  },
-  {
     id: "about",
     label: "Sobre nosotros",
     linkTo: "/nosotros",
@@ -21,7 +16,7 @@ const NAV_SECTIONS = [
   {
     id: "products",
     label: "Nuestros Productos",
-    linkTo: "/test",
+    linkTo: "/productos",
   },
   {
     id: "dealers",

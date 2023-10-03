@@ -3,9 +3,10 @@
 .container {
   display: flex;
   position: relative;
-  height: 15.5rem;
-  padding: 0 12.5rem;
+  height: 15.625rem;
+  padding: 2.625rem 12.5rem;
   align-items: center;
+  box-sizing: border-box;
   color: white;
 
   .content {
@@ -18,14 +19,33 @@
     .info {
       width: 11.25rem;
 
+      a {
+        all: unset;
+      }
+
+      .footerField {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
       h6 {
         font-size: $h6;
-        margin: 0;
+        margin: 0 0 1.172rem 0;
         font-weight: 100;
       }
 
+      img {
+        margin-right: 1.175rem;
+      }
+
       p {
-        font-size: $pSm;
+        cursor: pointer;
+        margin: 0.844rem 0;
+
+        &.slogan {
+          font-size: 0.75rem;
+        }
 
         &.contact {
           font-size: 0.875rem;

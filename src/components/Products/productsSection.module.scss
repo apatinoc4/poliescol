@@ -1,0 +1,35 @@
+@import "@/app/globals.scss";
+
+.sectionContainer {
+  position: relative;
+}
+
+.containerGeneral {
+  height: 47.5rem;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    color: $blue;
+    font-size: $titleLg;
+    margin: 0;
+  }
+
+  p {
+    margin: 1rem 0 4.8rem 0;
+    font-size: $pMd;
+  }
+
+  .productCards {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 14rem;
+    box-sizing: border-box;
+  }
+}

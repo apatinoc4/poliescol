@@ -1,0 +1,35 @@
+@import "@/app/globals.scss";
+
+.container {
+  display: flex;
+  position: relative;
+  height: 16.875rem;
+  width: 16.5rem;
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 1.625rem;
+  padding-bottom: 1.4rem;
+  cursor: pointer;
+
+  h3 {
+    z-index: 1;
+    color: white;
+    margin: 0;
+    font-size: 1.425rem;
+    font-family: $futuraLt;
+    font-weight: 100;
+
+    span {
+      &.bottomLine {
+        font-family: $futuraMd;
+      }
+    }
+  }
+
+  .backgroundImage {
+    z-index: 0;
+  }
+}

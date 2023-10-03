@@ -16,13 +16,17 @@ $blue-tlbg: rgba(0, 74, 153, 0.9);
 $red-tlbg: rgba(226, 0, 26, 0.9);
 
 //fonts
-
+$futuraLt: var(--futuraLt);
 $futuraMd: var(--futuraMd);
 $futuraHv: var(--futuraHv);
-$h1Lg: 2.5rem;
+$titleLg: 2.5rem;
 $titleMd: 3rem;
 //SidePanel
 $h2Sp: 2.95rem;
 $h6: 1.25rem;
 $pMd: 1.25rem;
 $pSm: 0.625rem;
+
+//product Card
+
+$pcHeight: 16.875rem;

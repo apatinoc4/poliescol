@@ -4,6 +4,11 @@ export const futuraBk = localFont({
   src: "./futuraBookFont.ttf",
 });
 
+export const futuraLt = localFont({
+  src: "./futuraLightBt.ttf",
+  variable: "--futuraLt",
+});
+
 export const futuraMd = localFont({
   src: "./futuraMediumBt.ttf",
   variable: "--futuraMd",
