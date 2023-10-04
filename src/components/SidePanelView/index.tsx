@@ -45,9 +45,9 @@ const SidePanelView = ({
             <p>{text}</p>
           </div>
           {variant === "left" ? (
-            <Button text={buttonLabel} />
+            <Button label={buttonLabel} />
           ) : (
-            <Button text={buttonLabel} variant="red-font" />
+            <Button label={buttonLabel} variant="red-font" />
           )}
         </div>
         <Image

@@ -4,32 +4,44 @@
   position: relative;
 }
 
-.containerGeneral {
+.generalContainer {
   height: 47.5rem;
   width: 100%;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  h2 {
-    color: $blue;
-    font-size: $titleLg;
-    margin: 0;
+  &.cardsContainer {
+    h2 {
+      color: $blue;
+      font-size: $titleLg;
+      margin: 0;
+    }
+
+    p {
+      margin: 1rem 0 4.8rem 0;
+      font-size: $pMd;
+    }
+
+    .productCards {
+      width: 100%;
+      max-width: 57.5rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      box-sizing: border-box;
+      gap: 3.75rem;
+    }
   }
 
-  p {
-    margin: 1rem 0 4.8rem 0;
-    font-size: $pMd;
-  }
+  &.carouselContainer {
+    .contents {
+      width: 76.7%;
 
-  .productCards {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0 14rem;
-    box-sizing: border-box;
+      select {
+        width: 100%;
+      }
+    }
   }
 }

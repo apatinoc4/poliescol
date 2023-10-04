@@ -1,0 +1,14 @@
+.container {
+  width: 100%;
+
+  .thumbnails {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1.375rem;
+    padding: 1rem 0;
+    box-sizing: border-box;
+    margin-top: 2.25rem;
+    background-color: lightgray;
+  }
+}

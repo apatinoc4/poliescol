@@ -3,11 +3,11 @@ import styles from "./button.module.scss";
 import clsx from "clsx";
 
 interface ButtonProps {
-  text: string;
+  label: string;
   variant?: "red-font" | "red-body";
 }
 
-const Button = ({ text, variant }: ButtonProps) => {
+const Button = ({ label, variant }: ButtonProps) => {
   return (
     <button
       className={clsx(styles.button, {
@@ -16,7 +16,7 @@ const Button = ({ text, variant }: ButtonProps) => {
         [styles.redBody]: variant === "red-body",
       })}
     >
-      {text}
+      {label}
     </button>
   );
 };

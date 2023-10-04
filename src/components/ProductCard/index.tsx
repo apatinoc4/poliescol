@@ -1,29 +1,31 @@
 import Image from "next/image";
 import React from "react";
 import styles from "./productCard.module.scss";
+import { ProductLineIds } from "types/products";
 
 interface ProductCardProps {
   backgroundImg: string;
   hasDeWord?: boolean;
   productLabel: string;
-  setIsDisplayingDetail: (isDisplayingDetail: boolean) => void;
+  productLineId: ProductLineIds;
+  onClick: (productLineId: ProductLineIds) => void;
 }
 
 const ProductCard = ({
   backgroundImg,
   hasDeWord,
   productLabel,
-  setIsDisplayingDetail,
+  productLineId,
+  onClick,
 }: ProductCardProps) => {
   return (
-    <div
-      onClick={() => setIsDisplayingDetail(false)}
-      className={styles.container}
-    >
+    <div onClick={() => onClick(productLineId)} className={styles.container}>
       <h3>
         Línea {hasDeWord && <span>de</span>}
         <br />
-        <span className={styles.bottomLine}>{productLabel}</span>
+        <span className={styles.bottomLine}>
+          {productLabel.toLocaleLowerCase()}
+        </span>
       </h3>
       <Image
         alt={backgroundImg}
