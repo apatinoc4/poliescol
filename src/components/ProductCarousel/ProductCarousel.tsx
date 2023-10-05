@@ -7,35 +7,12 @@ import "swiper/css";
 import ProductCarouselSlide from "./ProductCarouselSlide";
 import { ProductLineIds } from "types/products";
 import { PRODUCTS } from "constants/products";
-import { useSwiper } from "swiper/react";
-
 import styles from "./productCarousel.module.scss";
-import Image from "next/image";
+import ThumbnailControl from "./ThumbnailControl";
 
 interface ProductCarouselProps {
   productLine: ProductLineIds;
 }
-
-interface ThumbnailControlProps {
-  idx: number;
-  productImg: string;
-}
-
-const ThumbnailControl = ({ idx, productImg }: ThumbnailControlProps) => {
-  const swiper = useSwiper();
-
-  return (
-    <div onClick={() => swiper.slideTo(idx)}>
-      <Image
-        alt={productImg}
-        className={styles.sectionImg}
-        src={`/${productImg}`}
-        width={93}
-        height={93}
-      />
-    </div>
-  );
-};
 
 const ProductCarousel = ({ productLine }: ProductCarouselProps) => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);

@@ -5,6 +5,7 @@
 }
 
 .generalContainer {
+  position: relative;
   height: 47.5rem;
   width: 100%;
   display: flex;
@@ -36,12 +37,22 @@
   }
 
   &.carouselContainer {
+    position: relative;
+
+    .dropdownControls {
+      position: relative;
+    }
+
     .contents {
       width: 76.7%;
+    }
 
-      select {
-        width: 100%;
-      }
+    .thumbnailBrand {
+      position: absolute;
+      width: 100%;
+      background-color: $gray;
+      height: 142px;
+      bottom: 53px;
     }
   }
 }

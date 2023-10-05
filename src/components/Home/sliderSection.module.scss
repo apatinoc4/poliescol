@@ -1,0 +1,35 @@
+@import "@/app/globals.scss";
+
+.container {
+  height: 17rem;
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+
+  .carousel {
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+    width: 100%;
+  }
+
+  .transluscentBg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    .tlCover {
+      background-color: $red;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      opacity: 0.7;
+    }
+
+    .backgroundimg {
+      z-index: 0;
+    }
+  }
+}

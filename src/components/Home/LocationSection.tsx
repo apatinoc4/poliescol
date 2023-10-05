@@ -68,9 +68,7 @@ const LocationSection = () => {
         title="Encuentra nuestro punto físico"
         variant="section"
       />
-      <div>
-        <Map apikey="" />
-      </div>
+      <div>{/* <Map apikey="" /> */}</div>
     </section>
   );
 };

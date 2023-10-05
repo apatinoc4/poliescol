@@ -16,7 +16,7 @@ const ExperienceSection = () => {
             automotriz, metalmecánica y constructora.
           </p>
           <p>Más de 50 años de experiencia</p>
-          <Button text="Conoce más" />
+          <Button label="Conoce más" />
         </div>
       </div>
       <Image

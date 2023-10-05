@@ -1,3 +1,5 @@
+@import "@/app/globals.scss";
+
 .container {
   width: 100%;
 
@@ -9,6 +11,6 @@
     padding: 1rem 0;
     box-sizing: border-box;
     margin-top: 2.25rem;
-    background-color: lightgray;
+    background-color: $gray;
   }
 }

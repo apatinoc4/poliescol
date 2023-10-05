@@ -7,17 +7,17 @@ const FOOTER_SECTIONS = [
   {
     title: "Contáctanos",
     field1: {
-      icon: "icon_call_.svg",
+      icon: "iconWhatsapp.png",
       label: "+57 316 8340926",
       linkTo: "https://wa.me/573168340926",
     },
     field2: {
-      icon: "icon_call_.svg",
+      icon: "iconMail.png",
       label: "info@poliescol.com",
       linkTo: "mailto:info@poliescol.com",
     },
     field3: {
-      icon: "icon_call_.svg",
+      icon: "iconCall.svg",
       label: "+57 316 8340926",
       linkTo: "https://wa.me/573168340926",
     },
@@ -40,17 +40,17 @@ const FOOTER_SECTIONS = [
   {
     title: "Síguenos en redes",
     field1: {
-      icon: "icon_call_.svg",
+      icon: "iconCall.svg",
       label: "@productospoliescol",
       linkTo: "https://www.instagram.com/productospoliescol/",
     },
     field2: {
-      icon: "icon_call_.svg",
+      icon: "iconCall.svg",
       label: "@facebook",
       linkTo: "https://www.facebook.com/p/Productos-poliescol-100070740716277/",
     },
     field3: {
-      icon: "icon_call_.svg",
+      icon: "iconCall.svg",
       label: "@youtube",
       linkTo: "https://www.youtube.com/watch?v=bN7bWOnZ050",
     },
