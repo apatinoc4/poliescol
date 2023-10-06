@@ -8,6 +8,7 @@ body {
 
 $dark-gray: #292929;
 $gray: #e9e9e9;
+$light-gray: #f6f6f6;
 $blue: #004a99;
 $red: #e2001a;
 
@@ -20,8 +21,8 @@ $red-tlbg: rgba(226, 0, 26, 0.9);
 $futuraLt: var(--futuraLt);
 $futuraMd: var(--futuraMd);
 $futuraHv: var(--futuraHv);
-$titleLg: 2.5rem;
-$titleMd: 3rem;
+$titleMd: 2.5rem;
+$titleLg: 3rem;
 //SidePanel
 $h2Sp: 2.95rem;
 $h6: 1.25rem;
@@ -29,5 +30,7 @@ $pMd: 1.25rem;
 $pSm: 0.625rem;
 
 //product Card
-
 $pcHeight: 16.875rem;
+
+//subHeader
+$subHeaderHeight: 8.25rem;

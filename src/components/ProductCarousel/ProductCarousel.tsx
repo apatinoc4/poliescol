@@ -5,34 +5,29 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Navigation, Thumbs } from "swiper/modules";
 import "swiper/css";
 import ProductCarouselSlide from "./ProductCarouselSlide";
-import { ProductLineIds } from "types/products";
-import { PRODUCTS } from "constants/products";
 import styles from "./productCarousel.module.scss";
-import ThumbnailControl from "./ThumbnailControl";
+import { Product } from "types/products";
 
 interface ProductCarouselProps {
-  productLine: ProductLineIds;
+  products: Product[];
+  setSwiperInstance: (swiper: any) => void;
 }
 
-const ProductCarousel = ({ productLine }: ProductCarouselProps) => {
-  const [thumbsSwiper, setThumbsSwiper] = useState(null);
-
-  const currentProducts = useMemo(() => {
-    return PRODUCTS[productLine];
-  }, [productLine]);
-
+const ProductCarousel = ({
+  products,
+  setSwiperInstance,
+}: ProductCarouselProps) => {
   return (
     <div className={styles.container}>
       <Swiper
+        onSwiper={(swiper) => setSwiperInstance(swiper)}
         spaceBetween={10}
         navigation={true}
-        thumbs={{ swiper: thumbsSwiper }}
         modules={[FreeMode, Navigation, Thumbs]}
-        className="mySwiper2"
       >
-        {currentProducts.map(({ description, name, productImg }, idx) => {
+        {products.map(({ description, name, productImg }, idx) => {
           return (
-            <SwiperSlide key={`${productLine}-${idx}`}>
+            <SwiperSlide key={idx}>
               <ProductCarouselSlide
                 description={description}
                 name={name}
@@ -41,13 +36,6 @@ const ProductCarousel = ({ productLine }: ProductCarouselProps) => {
             </SwiperSlide>
           );
         })}
-        <div className={styles.thumbnails}>
-          {currentProducts.map(({ productImg }, idx) => {
-            return (
-              <ThumbnailControl productImg={productImg} key={idx} idx={idx} />
-            );
-          })}
-        </div>
       </Swiper>
     </div>
   );

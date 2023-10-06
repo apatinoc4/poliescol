@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import SubHeader from "../SubHeader";
 import styles from "./productsSection.module.scss";
 import ProductCard from "@/components/ProductCard";
@@ -10,10 +10,12 @@ import clsx from "clsx";
 import FormControl from "@mui/material/FormControl";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 import IconButton from "@mui/material/IconButton";
-import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import { ProductLineIds } from "types/products";
 import PageThemeProvider from "context/PageThemeProvider";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import ArrowIcon from "@/components/Icons/Arrow";
+import { PRODUCTS } from "constants/products";
+import ThumbnailControl from "@/components/ProductCarousel/ThumbnailControl";
 
 enum ProductLineLabels {
   Putty = "Masillas",
@@ -41,15 +43,26 @@ const PRODUCT_LINES = [
 ];
 
 const ProductsSection = () => {
-  const [isDisplayingDetail, setIsDisplayingDetail] = useState<boolean>(false);
+  const [isDisplayingDetail, setIsDisplayingDetail] = useState<boolean>(true);
   const [productLine, setProductLine] = useState<ProductLineIds>(
     ProductLineIds.Putty
   );
+  const [swiperInstance, setSwiperInstance] = useState<any>();
+
+  const selectedProducts = useMemo(() => {
+    return PRODUCTS[productLine];
+  }, [productLine]);
 
   const handleClickCard = (productLineId: ProductLineIds) => {
     setIsDisplayingDetail(true);
     setProductLine(productLineId);
   };
+
+  const handleSelectLine = (e: SelectChangeEvent) => {
+    setProductLine(e.target.value as ProductLineIds);
+    swiperInstance.slideTo(0);
+  };
+
   return (
     <PageThemeProvider>
       <section className={styles.sectionContainer}>
@@ -90,16 +103,14 @@ const ProductsSection = () => {
                   className="productLines-back"
                   onClick={() => setIsDisplayingDetail(false)}
                 >
-                  <ArrowBackIosIcon />
+                  <ArrowIcon direction="left" />
                 </IconButton>
                 <FormControl className="productLines-dropdown" fullWidth>
                   <Select
                     IconComponent={ExpandMoreIcon}
                     id="product-line"
                     name="product-line"
-                    onChange={(e) =>
-                      setProductLine(e.target.value as ProductLineIds)
-                    }
+                    onChange={handleSelectLine}
                     variant="standard"
                     value={productLine}
                   >
@@ -115,9 +126,23 @@ const ProductsSection = () => {
                   </Select>
                 </FormControl>
               </div>
-              <ProductCarousel productLine={productLine} />
+              <ProductCarousel
+                products={selectedProducts}
+                setSwiperInstance={setSwiperInstance}
+              />
             </div>
-            <div className={styles.thumbnailBrand}></div>
+            <div className={styles.thumbnails}>
+              {selectedProducts.map(({ productImg }, idx) => {
+                return (
+                  <ThumbnailControl
+                    productImg={productImg}
+                    swiperInstance={swiperInstance}
+                    key={idx}
+                    idx={idx}
+                  />
+                );
+              })}
+            </div>
           </div>
         )}
       </section>

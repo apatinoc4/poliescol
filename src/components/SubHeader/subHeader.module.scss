@@ -14,7 +14,7 @@
   }
 
   h1 {
-    font-size: $titleLg;
+    font-size: $titleMd;
   }
 
   h2 {
@@ -22,7 +22,7 @@
   }
 
   &.default {
-    height: 8.25rem;
+    height: $subHeaderHeight;
   }
 
   .tlCover {

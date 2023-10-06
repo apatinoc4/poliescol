@@ -18,8 +18,8 @@ const theme = createTheme({
             padding: "10px 20px",
 
             ".MuiInput-underline": {
-              "&:hover": {
-                border: "none !important",
+              "&:before, &:after": {
+                display: "none",
               },
             },
 
@@ -39,6 +39,10 @@ const theme = createTheme({
                   border: "none",
                 },
               },
+
+              svg: {
+                color: "#818181",
+              },
             },
           },
         },
@@ -49,13 +53,13 @@ const theme = createTheme({
         root: {
           "&.productLines-back": {
             transform: "translateY(-50%)",
-            left: "-45px",
+            left: "-60px",
             position: "absolute",
             top: "50%",
 
             svg: {
               height: 27,
-              transform: "translateX(5px)",
+              width: 27,
             },
           },
         },

@@ -1,15 +1,16 @@
 import React from "react";
 import styles from "./homeCarouselSlide.module.scss";
 
-const HomeCarouselSlide = () => {
+interface HomeCarouselSlideProps {
+  author: string;
+  message: string;
+}
+
+const HomeCarouselSlide = ({ author, message }: HomeCarouselSlideProps) => {
   return (
     <div className={styles.container}>
-      <p>
-        somos productores de masillas, impermeabilizantes, selladores y otros
-        productos complementarios con mejores especificaciones ajustadas a las
-        necesidades y preferencias de nuestros clientes
-      </p>
-      <h2>Nombre de usuario</h2>
+      <p>{message}</p>
+      <h2>{author}</h2>
     </div>
   );
 };

@@ -1,19 +1,22 @@
-.test1 {
-  position: absolute;
-  top: 95px;
-  left: 68px;
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  padding: 4.375rem 4.25rem 0 4.25rem;
+  box-sizing: border-box;
 
-  svg {
-    height: 41px;
-  }
-}
+  .arrowControl {
+    transform: translateY(1.5rem);
 
-.test2 {
-  position: absolute;
-  top: 95px;
-  right: 68px;
+    svg {
+      color: white;
+      height: 2.5rem;
+      cursor: pointer;
 
-  svg {
-    height: 41px;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
   }
 }

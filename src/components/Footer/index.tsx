@@ -26,15 +26,18 @@ const FOOTER_SECTIONS = [
     title: "Preguntas frecuentes",
     field1: {
       label: "Políticas y garantías",
-      linkTo: "placeholder_link4",
+      linkTo: "preguntas-frecuentes",
+      noTargetBlank: true,
     },
     field2: {
       label: "Preguntas frecuentes",
-      linkTo: "placeholder_link5",
+      linkTo: "preguntas-frecuentes",
+      noTargetBlank: true,
     },
     field3: {
       label: "Contacto con asesores",
       linkTo: "placeholder_link6",
+      noTargetBlank: true,
     },
   },
   {
@@ -86,7 +89,10 @@ const Footer = () => {
                     width={15}
                   />
                 )}
-                <Link href={field1.linkTo} target="_blank">
+                <Link
+                  href={field1.linkTo}
+                  target={field1.noTargetBlank ? "" : "_blank"}
+                >
                   <p className={styles.contact}>{field1.label}</p>
                 </Link>
               </div>
@@ -99,7 +105,10 @@ const Footer = () => {
                     width={15}
                   />
                 )}
-                <Link href={field2.linkTo} target="_blank">
+                <Link
+                  href={field2.linkTo}
+                  target={field2.noTargetBlank ? "" : "_blank"}
+                >
                   <p className={styles.contact}>{field2.label}</p>
                 </Link>
               </div>
@@ -112,7 +121,10 @@ const Footer = () => {
                     width={15}
                   />
                 )}
-                <Link href={field3.linkTo} target="_blank">
+                <Link
+                  href={field3.linkTo}
+                  target={field3.noTargetBlank ? "" : "_blank"}
+                >
                   <p className={styles.contact}>{field3.label}</p>
                 </Link>
               </div>

@@ -1,6 +1,10 @@
-import { ProductLineIds } from "types/products";
+import { Product, ProductLineIds } from "types/products";
 
-export const PRODUCTS = {
+type ProductMap = {
+  [key in ProductLineIds]: Product[];
+};
+
+export const PRODUCTS: ProductMap = {
   [ProductLineIds.Putty]: [
     {
       productImg: "putty-polifibra.png",
