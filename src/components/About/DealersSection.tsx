@@ -20,6 +20,7 @@ const DealersSection = () => {
         text={text}
         title={title}
         variant="right"
+        linkTo="/distribuidores"
       />
     </section>
   );

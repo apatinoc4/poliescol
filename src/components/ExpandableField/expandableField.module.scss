@@ -14,6 +14,11 @@
     align-items: center;
     border-radius: 2px;
     margin-bottom: 1.75rem;
+    cursor: pointer;
+
+    svg {
+      color: $dark-gray;
+    }
 
     h3,
     p {
@@ -22,12 +27,16 @@
 
     h3 {
       font-size: 1.625rem;
+
+      &.variantTitle {
+        color: $blue;
+        font-size: 1.563rem;
+      }
     }
 
     p {
       color: $blue;
       font-family: $futuraHv;
-      cursor: pointer;
     }
   }
 

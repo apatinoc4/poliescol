@@ -13,7 +13,7 @@ import IconButton from "@mui/material/IconButton";
 import { ProductLineIds } from "types/products";
 import PageThemeProvider from "context/PageThemeProvider";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import ArrowIcon from "@/components/Icons/Arrow";
+import CustomIcon from "@/components/Icons";
 import { PRODUCTS } from "constants/products";
 import ThumbnailControl from "@/components/ProductCarousel/ThumbnailControl";
 
@@ -43,7 +43,7 @@ const PRODUCT_LINES = [
 ];
 
 const ProductsSection = () => {
-  const [isDisplayingDetail, setIsDisplayingDetail] = useState<boolean>(true);
+  const [isDisplayingDetail, setIsDisplayingDetail] = useState<boolean>(false);
   const [productLine, setProductLine] = useState<ProductLineIds>(
     ProductLineIds.Putty
   );
@@ -103,7 +103,7 @@ const ProductsSection = () => {
                   className="productLines-back"
                   onClick={() => setIsDisplayingDetail(false)}
                 >
-                  <ArrowIcon direction="left" />
+                  <CustomIcon icon="arrowLeft" />
                 </IconButton>
                 <FormControl className="productLines-dropdown" fullWidth>
                   <Select

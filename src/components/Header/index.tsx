@@ -21,7 +21,7 @@ const NAV_SECTIONS = [
   {
     id: "dealers",
     label: "Distribuidores",
-    linkTo: "/test",
+    linkTo: "/distribuidores",
   },
   {
     id: "blogs",
@@ -29,9 +29,9 @@ const NAV_SECTIONS = [
     linkTo: "/test",
   },
   {
-    id: "crew",
+    id: "advisors",
     label: "Miembros",
-    linkTo: "/test",
+    linkTo: "/asesores",
   },
 ];
 

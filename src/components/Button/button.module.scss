@@ -10,6 +10,10 @@
   width: fit-content;
   white-space: nowrap;
 
+  &.paddingSm {
+    padding: 3px 10px;
+  }
+
   &.blueFont {
     color: $blue;
   }

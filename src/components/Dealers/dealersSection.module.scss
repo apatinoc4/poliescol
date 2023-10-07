@@ -1,0 +1,24 @@
+@import "@/app/globals.scss";
+
+.sectionContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: $light-gray;
+  min-height: 100vh;
+
+  .backgroundImg {
+    position: relative;
+    flex-grow: 1;
+    width: 39.75rem;
+    height: 68.5rem;
+  }
+  .contents {
+    box-sizing: border-box;
+    padding: 4rem 6.625rem 7.75rem 6.625rem;
+    width: 56%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}

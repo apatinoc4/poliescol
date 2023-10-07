@@ -20,6 +20,7 @@ const ProductSection = () => {
         text={text}
         title={title}
         variant="left"
+        linkTo="/productos"
       />
     </section>
   );

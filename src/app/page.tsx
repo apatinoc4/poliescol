@@ -1,4 +1,4 @@
-import ContactSection from "@/components/Home/ContactSection";
+import ContactAdviserSection from "@/components/ContactAdvisors";
 import DealersSection from "@/components/Home/DealersSection";
 import ExperienceSection from "@/components/Home/ExperienceSection";
 import IntroSection from "@/components/Home/IntroSection";
@@ -15,7 +15,7 @@ export default function Home() {
       <ExperienceSection />
       <ProductSection />
       <DealersSection />
-      <ContactSection />
+      <ContactAdviserSection />
       <LocationSection />
     </Layout>
   );

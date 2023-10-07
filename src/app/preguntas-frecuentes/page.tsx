@@ -1,4 +1,4 @@
-import FaqsSection from "@/components/FAQs/FaqSection";
+import FaqsSection from "@/components/FAQs";
 import Layout from "@/components/Layout";
 import SubHeader from "@/components/SubHeader";
 import React from "react";

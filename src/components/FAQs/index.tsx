@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./faqSection.module.scss";
-import InfoCard from "./InfoCard";
+import ExpandableField from "@/components/ExpandableField";
+import InfoCard from "@/components/InfoCard";
+import { FAQ } from "constants/faq";
 
 const FaqsSection = () => {
   return (
@@ -18,7 +20,14 @@ const FaqsSection = () => {
         </p>
       </div>
       <div className={styles.contents}>
-        <InfoCard />
+        <ExpandableField title="Políticas y garantías">
+          <InfoCard title="Politica 1" body="Darlo todo" />
+        </ExpandableField>
+        <ExpandableField title="Preguntas frecuentes">
+          {FAQ.map(({ question, answer }, idx) => {
+            return <InfoCard key={idx} title={question} body={answer} />;
+          })}
+        </ExpandableField>
       </div>
     </section>
   );

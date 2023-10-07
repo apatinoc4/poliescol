@@ -1,0 +1,33 @@
+@import "@/app/globals.scss";
+
+.container {
+  background-color: white;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.375rem;
+
+  svg {
+    color: $dark-gray;
+  }
+
+  h6,
+  p {
+    font-size: $pMd;
+  }
+
+  p {
+    margin-bottom: 0;
+    color: #898989;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h6 {
+      font-size: $pMd;
+      font-weight: lighter;
+      margin: 0;
+    }
+  }
+}

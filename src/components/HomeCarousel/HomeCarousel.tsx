@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, FreeMode, Thumbs } from "swiper/modules";
 import HomeCarouselSlide from "./HomeCarouselSlide";
 import styles from "./homeCarousel.module.scss";
-import ArrowIcon from "@/components/Icons/Arrow";
+import CustomIcon from "@/components/Icons";
 
 const SLIDE_MESSAGES = [
   {
@@ -43,7 +43,7 @@ const HomeCarousel = () => {
   return (
     <div className={styles.container}>
       <div className={styles.arrowControl} onClick={() => handleClickPrev()}>
-        <ArrowIcon direction="left" />
+        <CustomIcon icon="arrowLeft" />
       </div>
       <Swiper
         onSwiper={(swiper) => setSwiperInstance(swiper)}
@@ -66,7 +66,7 @@ const HomeCarousel = () => {
         })}
       </Swiper>
       <div className={styles.arrowControl} onClick={() => handleClickNext()}>
-        <ArrowIcon direction="right" />
+        <CustomIcon icon="arrowRight" />
       </div>
     </div>
   );

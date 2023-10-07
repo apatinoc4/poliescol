@@ -36,7 +36,7 @@ const FOOTER_SECTIONS = [
     },
     field3: {
       label: "Contacto con asesores",
-      linkTo: "placeholder_link6",
+      linkTo: "asesores",
       noTargetBlank: true,
     },
   },

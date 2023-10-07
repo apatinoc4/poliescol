@@ -9,7 +9,7 @@ const SECTION_INFO = {
   text: "Contamos con asesoría específica para ti en diferentes ciudades del país. Contacta a un asesor para recibir ayuda personalizada",
 };
 
-const AdviserSection = () => {
+const ContactAdviserSection = () => {
   const { buttonLabel, coverImg, panelImg, title, text } = SECTION_INFO;
   return (
     <section>
@@ -20,9 +20,10 @@ const AdviserSection = () => {
         text={text}
         title={title}
         variant="right"
+        linkTo="/asesores"
       />
     </section>
   );
 };
 
-export default AdviserSection;
+export default ContactAdviserSection;

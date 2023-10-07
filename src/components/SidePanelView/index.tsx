@@ -3,6 +3,7 @@ import styles from "./sidePanelView.module.scss";
 import clsx from "clsx";
 import Image from "next/image";
 import Button from "@/components/Button";
+import Link from "next/link";
 
 interface SidePanelViewProps {
   buttonLabel: string;
@@ -11,11 +12,13 @@ interface SidePanelViewProps {
   title: string;
   text: string;
   variant: "left" | "right";
+  linkTo: string;
 }
 
 const SidePanelView = ({
   buttonLabel,
   coverImg,
+  linkTo,
   panelImg,
   title,
   text,
@@ -45,9 +48,14 @@ const SidePanelView = ({
             <p>{text}</p>
           </div>
           {variant === "left" ? (
-            <Button label={buttonLabel} />
+            <Link href={linkTo}>
+              {" "}
+              <Button label={buttonLabel} />
+            </Link>
           ) : (
-            <Button label={buttonLabel} variant="red-font" />
+            <Link href={linkTo}>
+              <Button label={buttonLabel} variant="red-font" />
+            </Link>
           )}
         </div>
         <Image
