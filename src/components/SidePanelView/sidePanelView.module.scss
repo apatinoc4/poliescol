@@ -43,6 +43,10 @@
       &.left {
         background-color: $blue-tlbg;
         padding: 7rem 9.5rem 7rem 7.125rem;
+
+        h2 {
+          width: 150%;
+        }
       }
 
       &.right {
@@ -53,10 +57,11 @@
 
     .text {
       color: white;
+      text-overflow: clip;
       h2 {
         font-size: 3rem;
         font-family: $futuraHv;
-        width: 26.75rem;
+        width: 125%;
         white-space: wrap;
         margin-bottom: 1.25rem;
       }

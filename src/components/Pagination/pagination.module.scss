@@ -1,0 +1,42 @@
+@import "@/app/globals.scss";
+
+.container {
+  height: 6.875rem;
+
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: $gray;
+  display: flex;
+  justify-content: center;
+  gap: 3.7rem;
+
+  p {
+    cursor: pointer;
+    color: $red;
+
+    &.disabled {
+      color: $dark-gray;
+      pointer-events: none;
+    }
+  }
+
+  .pages {
+    display: flex;
+    gap: 1rem;
+
+    .pageBullet {
+      background-color: $dark-gray;
+      height: 0.469rem;
+      width: 0.469rem;
+      border-radius: 50%;
+      cursor: pointer;
+
+      &.currentPage {
+        background-color: $red;
+      }
+    }
+  }
+}

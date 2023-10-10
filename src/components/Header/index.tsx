@@ -26,7 +26,7 @@ const NAV_SECTIONS = [
   {
     id: "blogs",
     label: "Blogs",
-    linkTo: "/test",
+    linkTo: "/blog",
   },
   {
     id: "advisors",

@@ -2,22 +2,24 @@ import React from "react";
 import styles from "./footer.module.scss";
 import Image from "next/image";
 import Link from "next/link";
+import CustomIcon from "@/components/Icons";
+import { IconName } from "types";
 
 const FOOTER_SECTIONS = [
   {
     title: "Contáctanos",
     field1: {
-      icon: "iconWhatsapp.png",
+      icon: "whatsapp",
       label: "+57 316 8340926",
       linkTo: "https://wa.me/573168340926",
     },
     field2: {
-      icon: "iconMail.png",
+      icon: "mail",
       label: "info@poliescol.com",
       linkTo: "mailto:info@poliescol.com",
     },
     field3: {
-      icon: "iconCall.svg",
+      icon: "phone",
       label: "+57 316 8340926",
       linkTo: "https://wa.me/573168340926",
     },
@@ -43,17 +45,17 @@ const FOOTER_SECTIONS = [
   {
     title: "Síguenos en redes",
     field1: {
-      icon: "iconCall.svg",
+      icon: "instagram",
       label: "@productospoliescol",
       linkTo: "https://www.instagram.com/productospoliescol/",
     },
     field2: {
-      icon: "iconCall.svg",
+      icon: "facebook",
       label: "@facebook",
       linkTo: "https://www.facebook.com/p/Productos-poliescol-100070740716277/",
     },
     field3: {
-      icon: "iconCall.svg",
+      icon: "youtube",
       label: "@youtube",
       linkTo: "https://www.youtube.com/watch?v=bN7bWOnZ050",
     },
@@ -81,14 +83,7 @@ const Footer = () => {
             <div className={styles.info} key={idx}>
               <h6>{title}</h6>
               <div className={styles.footerField}>
-                {field1.icon && (
-                  <Image
-                    alt={field1.icon}
-                    src={`/${field1.icon}`}
-                    height={15}
-                    width={15}
-                  />
-                )}
+                {field1.icon && <CustomIcon icon={field1.icon as IconName} />}
                 <Link
                   href={field1.linkTo}
                   target={field1.noTargetBlank ? "" : "_blank"}
@@ -97,14 +92,7 @@ const Footer = () => {
                 </Link>
               </div>
               <div className={styles.footerField}>
-                {field2.icon && (
-                  <Image
-                    alt={field2.icon}
-                    src={`/${field2.icon}`}
-                    height={15}
-                    width={15}
-                  />
-                )}
+                {field2.icon && <CustomIcon icon={field2.icon as IconName} />}
                 <Link
                   href={field2.linkTo}
                   target={field2.noTargetBlank ? "" : "_blank"}
@@ -113,14 +101,7 @@ const Footer = () => {
                 </Link>
               </div>
               <div className={styles.footerField}>
-                {field3.icon && (
-                  <Image
-                    alt={field3.icon}
-                    src={`/${field3.icon}`}
-                    height={15}
-                    width={15}
-                  />
-                )}
+                {field3.icon && <CustomIcon icon={field3.icon as IconName} />}
                 <Link
                   href={field3.linkTo}
                   target={field3.noTargetBlank ? "" : "_blank"}
