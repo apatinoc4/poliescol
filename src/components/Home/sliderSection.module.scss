@@ -7,6 +7,10 @@
   position: relative;
   justify-content: center;
 
+  @include mobile {
+    height: 15.625rem;
+  }
+
   .carousel {
     display: flex;
     justify-content: center;

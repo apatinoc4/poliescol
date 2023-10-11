@@ -8,6 +8,10 @@ $sectionHeight: 47.625rem;
   background-color: white;
   height: $sectionHeight;
 
+  @include mobile {
+    height: max-content;
+  }
+
   .sectionTitle {
     display: flex;
     height: 50%;
@@ -16,18 +20,33 @@ $sectionHeight: 47.625rem;
     flex-direction: column;
     text-align: center;
 
+    @include mobile {
+      margin: 4.875rem 0;
+      height: max-content;
+      gap: 1.75rem;
+      padding: 0 2.625rem;
+    }
+
     h2 {
       color: $blue;
       font-family: $futuraMd;
       font-size: $titleMd;
       font-weight: lighter;
       margin: 0;
+
+      @include mobile {
+        font-size: 2rem;
+      }
     }
 
     p {
       max-width: 36.25rem;
       margin: 0;
       font-size: $pMd;
+
+      @include mobile {
+        font-size: 1rem;
+      }
     }
   }
 
@@ -35,13 +54,19 @@ $sectionHeight: 47.625rem;
     height: 50%;
     position: relative;
 
+    @include mobile {
+      height: max-content;
+      padding-bottom: 7.95rem;
+    }
+
     .backgroundStripe {
       position: absolute;
       display: flex;
-      top: 0;
+      top: 50%;
       left: 0;
       width: 100%;
       height: $sectionHeight / 4;
+      transform: translateY(-75%);
 
       .tlCover {
         display: flex;
@@ -70,6 +95,12 @@ $sectionHeight: 47.625rem;
       transform: translateY(-3rem);
       position: relative;
       z-index: 2;
+
+      @include mobile {
+        align-items: center;
+        flex-direction: column;
+        transform: translateY(0);
+      }
     }
   }
 }

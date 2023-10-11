@@ -8,6 +8,12 @@
   padding: 0 7rem;
   position: relative;
 
+  @include mobile {
+    padding: 5.438rem 2.625rem 0 2.625rem;
+    align-items: flex-start;
+    height: 36.25rem;
+  }
+
   .landingText {
     color: white;
     display: flex;
@@ -21,6 +27,11 @@
         font-size: 2.75rem;
         font-family: $futuraHv;
         max-width: 37rem;
+
+        @include mobile {
+          font-size: 2rem;
+          max-width: 15.625rem;
+        }
       }
 
       ::after {
@@ -39,6 +50,10 @@
     p {
       font-size: $pMd;
       max-width: 34rem;
+
+      @include mobile {
+        font-size: 1rem;
+      }
     }
   }
 

@@ -6,6 +6,11 @@
   padding: 0 8.25rem;
   align-items: center;
 
+  @include mobile {
+    padding: 0;
+    justify-content: center;
+  }
+
   h1,
   h2 {
     color: white;
@@ -19,6 +24,10 @@
 
   h2 {
     font-size: 2rem;
+
+    @include mobile {
+      font-size: $pMd;
+    }
   }
 
   &.default {

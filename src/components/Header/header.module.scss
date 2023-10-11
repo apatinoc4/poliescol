@@ -6,6 +6,21 @@
   justify-content: flex-start;
   padding: 1rem 6rem;
 
+  .menuButton {
+    display: none;
+  }
+
+  @include mobile {
+    padding: 0.656rem 1.75rem;
+    justify-content: space-between;
+    .menuButton {
+      display: block;
+      svg {
+        color: $blue;
+      }
+    }
+  }
+
   a {
     all: unset;
     cursor: pointer;
@@ -17,6 +32,9 @@
     list-style: none;
     margin-left: 2rem;
     padding: 0;
+    @include mobile {
+      display: none;
+    }
   }
 
   li {

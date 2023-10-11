@@ -1,11 +1,14 @@
 "use client";
 
-import React from "react";
+import React, { ReactElement } from "react";
 import Image from "next/image";
 import styles from "./header.module.scss";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
+import CustomIcon from "@/components/Icons";
+import SvgIcon from "@mui/material/SvgIcon";
+import IconButton from "@mui/material/IconButton";
 
 const NAV_SECTIONS = [
   {
@@ -34,6 +37,10 @@ const NAV_SECTIONS = [
     linkTo: "/asesores",
   },
 ];
+
+const BurgerIcon = (): ReactElement => <CustomIcon icon="burgerMenu" />;
+
+IconButton;
 
 const getActivePathName = (pathName: string, currentPathname: string) =>
   pathName === currentPathname;
@@ -66,6 +73,9 @@ const Header = () => {
           );
         })}
       </ul>
+      <IconButton className={styles.menuButton}>
+        <SvgIcon component={BurgerIcon} />
+      </IconButton>
     </nav>
   );
 };

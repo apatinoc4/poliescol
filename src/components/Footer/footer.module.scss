@@ -9,6 +9,13 @@
   box-sizing: border-box;
   color: white;
 
+  @include mobile {
+    align-items: start;
+    justify-content: center;
+    height: 65.375rem;
+    padding: 2.625rem 4.625rem 6.25rem 4.625rem;
+  }
+
   .content {
     position: relative;
     z-index: 2;
@@ -16,8 +23,17 @@
     justify-content: space-between;
     width: 100%;
 
+    @include mobile {
+      flex-direction: column;
+      height: 100%;
+    }
+
     .info {
       width: 11.25rem;
+
+      @include mobile {
+        width: 100%;
+      }
 
       a {
         all: unset;
@@ -33,11 +49,20 @@
         font-size: $h6;
         margin: 0 0 1.172rem 0;
         font-weight: 100;
+
+        @include mobile {
+          font-size: 1.69rem;
+          white-space: nowrap;
+        }
       }
 
       svg {
         height: 1.125rem;
         margin-right: 1.175rem;
+
+        @include mobile {
+          height: 1.25rem;
+        }
       }
 
       p {
@@ -46,10 +71,18 @@
 
         &.slogan {
           font-size: 0.75rem;
+
+          @include mobile {
+            font-size: 1rem;
+          }
         }
 
         &.contact {
           font-size: 0.875rem;
+
+          @include mobile {
+            font-size: 1rem;
+          }
         }
       }
     }

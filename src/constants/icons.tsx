@@ -174,4 +174,19 @@ export const ICON_SVGS = {
       </g>
     </svg>
   ),
+  burgerMenu: (
+    <svg fill="none" height="24" viewBox="0 0 24 24" width="24">
+      <clipPath id="a">
+        <path d="m0 .000977h24v24h-24z" />
+      </clipPath>
+      <g clipPath="url(#a)">
+        <path
+          clipRule="evenodd"
+          d="m3.5 5c-.55228 0-1 .44772-1 1s.44772 1 1 1h17c.5523 0 1-.44772 1-1s-.4477-1-1-1zm-1 7c0-.5523.44772-1 1-1h17c.5523 0 1 .4477 1 1s-.4477 1-1 1h-17c-.55228 0-1-.4477-1-1zm0 6.001c0-.5523.44772-1 1-1h17c.5523 0 1 .4477 1 1s-.4477 1-1 1h-17c-.55228 0-1-.4477-1-1z"
+          fill="currentColor"
+          fillRule="evenodd"
+        />
+      </g>
+    </svg>
+  ),
 };
