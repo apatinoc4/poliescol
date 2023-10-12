@@ -20,6 +20,10 @@
 
   h1 {
     font-size: $titleMd;
+
+    @include mobile {
+      font-size: 1.625rem;
+    }
   }
 
   h2 {
@@ -32,6 +36,12 @@
 
   &.default {
     height: $subHeaderHeight;
+
+    @include mobile {
+      height: 7.375rem;
+      padding: 0 1.875rem;
+      justify-content: flex-start;
+    }
   }
 
   .tlCover {

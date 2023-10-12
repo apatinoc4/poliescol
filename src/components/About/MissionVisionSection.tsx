@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./dealersSection.module.scss";
+import styles from "./missionVision.module.scss";
 import Image from "next/image";
 
 const MissionVisionSection = () => {

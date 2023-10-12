@@ -6,7 +6,6 @@ import styles from "./introSection.module.scss";
 const IntroSection = () => {
   return (
     <section className={styles.container}>
-      <SubHeader backgroundImg="aboutUsHeaderBg.jpeg" title="Sobre nosotros" />
       <div className={styles.content}>
         <h1>Somos una empresa especializada</h1>
         <p>

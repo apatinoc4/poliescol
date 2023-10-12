@@ -13,6 +13,14 @@
   @include mobile {
     padding: 0.656rem 1.75rem;
     justify-content: space-between;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: #fff;
+    width: 100vw;
+    height: $mobileHeaderHeight;
+
     .menuButton {
       display: block;
       svg {

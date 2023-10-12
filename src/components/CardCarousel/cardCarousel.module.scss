@@ -1,0 +1,11 @@
+@import "@/app/globals.scss";
+
+.container {
+  display: none;
+
+  @include mobile {
+    display: block;
+    width: 100%;
+    padding-left: 1.25rem;
+  }
+}

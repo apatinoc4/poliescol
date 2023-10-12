@@ -1,0 +1,7 @@
+@import "@/app/globals.scss";
+
+.main {
+  @include mobile {
+    padding-top: $mobileHeaderHeight;
+  }
+}

@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation, FreeMode, Thumbs } from "swiper/modules";
+import { Pagination, Navigation, FreeMode } from "swiper/modules";
 import HomeCarouselSlide from "./HomeCarouselSlide";
 import styles from "./homeCarousel.module.scss";
 import CustomIcon from "@/components/Icons";
@@ -54,7 +54,7 @@ const HomeCarousel = () => {
           clickable: true,
         }}
         navigation
-        modules={[Pagination, Navigation, FreeMode, Thumbs]}
+        modules={[Pagination, Navigation, FreeMode]}
         className="mySwiper"
       >
         {SLIDE_MESSAGES.map(({ author, message }, idx) => {

@@ -13,11 +13,13 @@ interface SidePanelViewProps {
   text: string;
   variant: "left" | "right";
   linkTo: string;
+  coverSize?: "lg";
 }
 
 const SidePanelView = ({
   buttonLabel,
   coverImg,
+  coverSize,
   linkTo,
   panelImg,
   title,
@@ -67,7 +69,11 @@ const SidePanelView = ({
           style={{ objectFit: "cover" }}
         />
       </div>
-      <div className={styles.coverImage}>
+      <div
+        className={clsx(styles.coverImage, {
+          [styles.largeCover]: coverSize === "lg",
+        })}
+      >
         <Image
           alt={coverImg}
           className={styles.backgroundImage}

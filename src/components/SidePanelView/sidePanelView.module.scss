@@ -131,6 +131,10 @@
     @include mobile {
       width: 100%;
       height: 22.375rem;
+
+      &.largeCover {
+        height: 27.25rem;
+      }
     }
 
     .backgroundImage {

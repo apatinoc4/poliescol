@@ -3,11 +3,16 @@
 .container {
   .content {
     display: flex;
-    height: 42.7rem;
+    height: 42.625rem;
     position: relative;
     flex-direction: column;
     justify-content: flex-end;
     padding: 4.5rem 6.25rem;
+
+    @include mobile {
+      height: 39.375rem;
+      padding: 0 2.75rem 4.875rem 2.75rem;
+    }
 
     h1,
     p {
@@ -15,7 +20,14 @@
       z-index: 1;
       margin: 0;
       max-width: 47.375rem;
+    }
+
+    p {
       font-size: $pMd;
+      @include mobile {
+        max-width: 19.875rem;
+        font-size: 1rem;
+      }
     }
 
     h1 {
@@ -24,6 +36,10 @@
       font-weight: lighter;
       max-width: 30.75rem;
       margin-bottom: 1rem;
+
+      @include mobile {
+        font-size: 2rem;
+      }
     }
   }
 }

@@ -4,6 +4,12 @@ export enum ProductLineIds {
   Waterproofing = "pl-2",
 }
 
+export enum ProductLineLabels {
+  Putty = "Masillas",
+  Architectural = "Arquitectónica",
+  Waterproofing = "Impermeabilizante",
+}
+
 export type Product = {
   productImg: string;
   name: string;

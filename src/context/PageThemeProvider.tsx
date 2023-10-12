@@ -1,5 +1,8 @@
+"use client";
+
 import { FC, ReactNode } from "react";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
+import { futuraBk, futuraLt, futuraMd, futuraHV } from "@/fonts/index";
 
 interface PageThemeProviderProps {
   children: ReactNode;
@@ -29,6 +32,7 @@ const theme = createTheme({
               },
 
               ".MuiSelect-standard": {
+                fontFamily: futuraBk.style.fontFamily,
                 "&:focus": {
                   backgroundColor: gray,
                 },
@@ -61,6 +65,28 @@ const theme = createTheme({
               height: 27,
               width: 27,
             },
+          },
+        },
+      },
+    },
+    MuiList: {
+      styleOverrides: {
+        root: {
+          padding: "7.25rem 3.875rem 0 2.625rem",
+          display: "flex",
+          flexDirection: "column",
+          gap: "2.75rem",
+
+          ".MuiListItem-root": {
+            padding: 0,
+            ".MuiTypography-root": {
+              fontFamily: futuraBk.style.fontFamily,
+              fontSize: "1.25rem",
+            },
+          },
+          a: {
+            all: "unset",
+            cursor: "pointer",
           },
         },
       },

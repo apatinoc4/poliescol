@@ -16,6 +16,7 @@ const DealersSection = () => {
       <SidePanelView
         buttonLabel={buttonLabel}
         coverImg={coverImg}
+        coverSize="lg"
         panelImg={panelImg}
         text={text}
         title={title}

@@ -1,4 +1,4 @@
-import { Product, ProductLineIds } from "types/products";
+import { Product, ProductLineIds, ProductLineLabels } from "types/products";
 
 type ProductMap = {
   [key in ProductLineIds]: Product[];
@@ -84,3 +84,22 @@ export const PRODUCTS: ProductMap = {
     },
   ],
 };
+
+export const PRODUCT_LINES = [
+  {
+    backgroundImg: "puttyLineBg.png",
+    id: ProductLineIds.Putty,
+    label: ProductLineLabels.Putty,
+    hasDeWord: true,
+  },
+  {
+    backgroundImg: "architecturalLineBg.png",
+    id: ProductLineIds.Architectural,
+    label: ProductLineLabels.Architectural,
+  },
+  {
+    backgroundImg: "waterproofingLineBg.png",
+    id: ProductLineIds.Waterproofing,
+    label: ProductLineLabels.Waterproofing,
+  },
+];

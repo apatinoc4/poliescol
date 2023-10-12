@@ -15,18 +15,36 @@
   align-items: center;
   justify-content: center;
 
+  @include mobile {
+    height: max-content;
+    padding-top: 3.375rem;
+    align-items: flex-start;
+    justify-content: start;
+  }
+
+  h2 {
+    color: $blue;
+    font-size: $titleMd;
+    margin: 0;
+
+    @include mobile {
+      padding: 0 2.375rem;
+      font-size: 2rem;
+    }
+  }
+
+  p {
+    margin: 1rem 0 4.8rem 0;
+    font-size: $pMd;
+
+    @include mobile {
+      padding: 0 2.375rem;
+      font-size: 1rem;
+      margin: 1.125rem 0 5.75rem 0;
+    }
+  }
+
   &.cardsContainer {
-    h2 {
-      color: $blue;
-      font-size: $titleMd;
-      margin: 0;
-    }
-
-    p {
-      margin: 1rem 0 4.8rem 0;
-      font-size: $pMd;
-    }
-
     .productCards {
       width: 100%;
       max-width: 57.5rem;
@@ -35,6 +53,10 @@
       justify-content: center;
       box-sizing: border-box;
       gap: 3.75rem;
+
+      @include mobile {
+        display: none;
+      }
     }
   }
 

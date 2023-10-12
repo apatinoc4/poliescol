@@ -14,6 +14,14 @@
   padding-bottom: 1.4rem;
   cursor: pointer;
 
+  @include mobile {
+    box-sizing: border-box;
+    padding-left: 1.05rem;
+    padding-bottom: 0.938rem;
+    width: 10.75rem;
+    height: 14.75rem;
+  }
+
   h3 {
     z-index: 1;
     color: white;
@@ -26,6 +34,10 @@
       &.bottomLine {
         font-family: $futuraMd;
       }
+    }
+
+    @include mobile {
+      font-size: 1rem;
     }
   }
 

@@ -2,6 +2,7 @@ import localFont from "next/font/local";
 
 export const futuraBk = localFont({
   src: "./futuraBookFont.ttf",
+  variable: "--futuraBk",
 });
 
 export const futuraLt = localFont({

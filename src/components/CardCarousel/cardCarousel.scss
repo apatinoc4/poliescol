@@ -1,0 +1,8 @@
+@import "@/app/globals.scss";
+
+.swiper-slide {
+  @include mobile {
+    margin-right: 20px !important;
+    width: 10.75rem !important;
+  }
+}
