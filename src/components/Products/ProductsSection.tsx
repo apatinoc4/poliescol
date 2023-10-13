@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import styles from "./productsSection.module.scss";
 import ProductCard from "@/components/ProductCard";
 import ProductCarousel from "../ProductCarousel/ProductCarousel";
@@ -15,6 +15,7 @@ import CustomIcon from "@/components/Icons";
 import { PRODUCTS, PRODUCT_LINES } from "constants/products";
 import ThumbnailControl from "@/components/ProductCarousel/ThumbnailControl";
 import CardCarousel from "@/components/CardCarousel";
+import ThumbnailContainer from "../ProductCarousel/ThumbnailContainer";
 
 const ProductsSection = () => {
   const [isDisplayingDetail, setIsDisplayingDetail] = useState<boolean>(false);
@@ -74,7 +75,7 @@ const ProductsSection = () => {
               >
                 <CustomIcon icon="arrowLeft" />
               </IconButton>
-              <FormControl className="productLines-dropdown" fullWidth>
+              <FormControl className="productLines-dropdown">
                 <Select
                   IconComponent={ExpandMoreIcon}
                   id="product-line"
@@ -100,18 +101,10 @@ const ProductsSection = () => {
               setSwiperInstance={setSwiperInstance}
             />
           </div>
-          <div className={styles.thumbnails}>
-            {selectedProducts.map(({ productImg }, idx) => {
-              return (
-                <ThumbnailControl
-                  productImg={productImg}
-                  swiperInstance={swiperInstance}
-                  key={idx}
-                  idx={idx}
-                />
-              );
-            })}
-          </div>
+          <ThumbnailContainer
+            products={selectedProducts}
+            swiperInstance={swiperInstance}
+          />
         </div>
       )}
     </section>

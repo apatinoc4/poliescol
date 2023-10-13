@@ -31,6 +31,7 @@ const ProductCard = ({
         alt={backgroundImg}
         className={styles.backgroundImage}
         fill
+        sizes="100%"
         src={`/${backgroundImg}`}
         style={{ objectFit: "cover" }}
       />

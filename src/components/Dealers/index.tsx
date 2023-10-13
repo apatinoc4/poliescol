@@ -11,6 +11,7 @@ const DealersSection = () => {
       <div className={styles.backgroundImg}>
         <Image
           alt="dealersSectionBg.jpeg"
+          priority
           fill
           src="/dealersSectionBg.jpeg"
           style={{ objectFit: "cover" }}

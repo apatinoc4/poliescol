@@ -36,7 +36,7 @@
       text-align: start;
 
       @include mobile {
-        padding: 0 0 0 1.5rem;
+        padding: 0 0 0 2.65rem;
       }
 
       h2 {
@@ -61,7 +61,7 @@
           margin-top: 1.313rem;
           margin-bottom: 0;
           font-size: 1rem;
-          max-width: 15.625rem;
+          max-width: 16rem;
         }
       }
 
@@ -72,7 +72,7 @@
         font-family: $futuraHv;
 
         @include mobile {
-          font-size: 1.375rem;
+          font-size: 1.3rem;
           width: 21.375rem;
           white-space: nowrap;
           margin: 2.75rem 0 1.5rem 0;

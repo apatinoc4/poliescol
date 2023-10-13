@@ -22,6 +22,7 @@ const IntroSection = () => {
         alt="introSectionBg.png"
         className={styles.backgroundImage}
         fill
+        sizes="100%"
         src="/introSectionBg.png"
         style={{ objectFit: "cover" }}
       />

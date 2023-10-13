@@ -18,6 +18,10 @@
 
     svg {
       color: $dark-gray;
+
+      @include mobile {
+        font-size: 1rem;
+      }
     }
 
     h3,
@@ -28,15 +32,27 @@
     h3 {
       font-size: 1.625rem;
 
+      @include mobile {
+        font-size: 1.125rem;
+      }
+
       &.variantTitle {
         color: $blue;
         font-size: 1.563rem;
+
+        @include mobile {
+          font-size: 1rem;
+        }
       }
     }
 
     p {
       color: $blue;
       font-family: $futuraHv;
+
+      @include mobile {
+        font-size: 1rem;
+      }
     }
   }
 
@@ -44,5 +60,10 @@
     border-radius: 2px;
     background-color: $gray;
     padding: 1.8rem 2.325rem;
+    margin-bottom: 1.75rem;
+
+    @include mobile {
+      padding: 0.875rem 0.75rem 0 0.75rem;
+    }
   }
 }

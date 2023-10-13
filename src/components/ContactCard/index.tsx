@@ -19,7 +19,7 @@ const ContactCard = ({ phone, field2, name, specialist }: ContactCardProps) => {
     <div className={styles.container}>
       <h6>{name}</h6>
       <div className={styles.infoField}>
-        <CustomIcon icon="phone" />
+        <CustomIcon icon="filledPhone" />
         <p>{phone}</p>
       </div>
       <div className={styles.infoField}>

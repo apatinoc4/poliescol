@@ -67,6 +67,7 @@ const PostPreview = ({
             className={styles.backgroundImage}
             fill
             src="/missionVision.jpeg"
+            sizes="100%"
             style={{ objectFit: "cover" }}
           />
         ) : (

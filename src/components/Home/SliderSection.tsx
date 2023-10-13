@@ -18,6 +18,7 @@ const SliderSection = () => {
           alt="homeSliderSectionBg.jpeg"
           className={styles.backgroundImage}
           fill
+          sizes="100%"
           src="/homeSliderSectionBg.jpeg"
           style={{ objectFit: "cover" }}
         />

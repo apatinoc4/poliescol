@@ -18,7 +18,9 @@ const IntroSection = () => {
           alt="warehouseBgAboutUs.jpeg"
           className={styles.backgroundImage}
           fill
+          priority
           src="/warehouseBg.jpeg"
+          sizes="100%"
           style={{ objectFit: "cover" }}
         />
       </div>

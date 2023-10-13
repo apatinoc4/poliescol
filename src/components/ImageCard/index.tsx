@@ -15,6 +15,7 @@ const ImageCard = ({ backgroundImg, label }: ImageCardProps) => {
         alt={backgroundImg}
         className={styles.backgroundImage}
         fill
+        sizes="100%"
         src={`/${backgroundImg}`}
         style={{ objectFit: "cover" }}
       />

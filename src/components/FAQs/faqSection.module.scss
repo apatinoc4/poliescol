@@ -13,6 +13,10 @@
     padding: 0 6.25rem;
     box-sizing: border-box;
 
+    @include mobile {
+      padding: 0 1.75rem;
+    }
+
     .title {
       position: relative;
       max-width: 100%;
@@ -21,6 +25,11 @@
         margin: 0;
         font-size: $titleMd;
         max-width: 65.8%;
+
+        @include mobile {
+          max-width: 83%;
+          font-size: 1.75rem;
+        }
       }
 
       ::after {
@@ -37,6 +46,9 @@
     p {
       margin-top: 3.125rem;
       max-width: 40%;
+      @include mobile {
+        max-width: 100%;
+      }
     }
   }
 
@@ -49,5 +61,10 @@
     align-items: center;
     box-sizing: border-box;
     padding: 0 6.25rem;
+
+    @include mobile {
+      margin-top: 2.375rem;
+      padding: 0 1.75rem;
+    }
   }
 }

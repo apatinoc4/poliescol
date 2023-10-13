@@ -31,6 +31,7 @@ const AdvisorListSection = () => {
           alt="advisorListSectionBg.jpeg"
           fill
           src="/advisorListSectionBg.jpeg"
+          sizes="100%"
           style={{ objectFit: "cover" }}
         />
       </div>

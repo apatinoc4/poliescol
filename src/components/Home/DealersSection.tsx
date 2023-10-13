@@ -46,6 +46,7 @@ const DealersSection = () => {
             alt="warehouseBg.jpeg"
             className={styles.backgroundImage}
             fill
+            sizes="100%"
             src="/warehouseBg.jpeg"
             style={{ objectFit: "cover" }}
           />

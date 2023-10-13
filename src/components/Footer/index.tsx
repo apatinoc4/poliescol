@@ -119,6 +119,7 @@ const Footer = () => {
         className={styles.backgroundImage}
         fill
         src="/footerBg.jpeg"
+        sizes="100%"
         style={{ objectFit: "cover" }}
       />
     </div>

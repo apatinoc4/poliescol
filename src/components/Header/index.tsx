@@ -91,12 +91,17 @@ const Header = () => {
         open={isSideMenuOpen}
         onClose={() => setIsSidemenuOpen(false)}
       >
-        <List className={styles.test}>
+        <List className="drawer-menu">
           {NAV_SECTIONS.map(({ id, label, linkTo }) => {
             return (
               <Link href={linkTo} key={id}>
                 <ListItem>
-                  <ListItemText primary={label} />
+                  <ListItemText
+                    className={clsx({
+                      ["active"]: getActivePathName(linkTo, currentPathname),
+                    })}
+                    primary={label}
+                  />
                 </ListItem>
               </Link>
             );

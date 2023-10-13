@@ -8,6 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import ProductCard from "@/components/ProductCard";
 import { ProductLineIds } from "types";
 import "./cardCarousel.scss";
+import "swiper/css";
 
 interface CardCarouselProps {
   handleClickCard: (productLineId: ProductLineIds) => void;
@@ -21,7 +22,7 @@ const CardCarousel = ({ handleClickCard }: CardCarouselProps) => {
         onSwiper={(swiper) => setSwiperInstance(swiper)}
         slidesPerView={2}
         spaceBetween={30}
-        // loop={true}
+        wrapperClass="card-carousel"
         pagination={{
           clickable: true,
         }}

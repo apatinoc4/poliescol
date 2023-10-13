@@ -1,10 +1,9 @@
 @import "@/app/globals.scss";
 
-.card-carousel {
+.thumbnail-carousel {
   .swiper-slide {
     @include mobile {
       margin-right: 20px !important;
-      width: 10.75rem !important;
     }
   }
 }

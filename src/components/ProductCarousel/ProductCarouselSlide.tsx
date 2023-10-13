@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./productCarouselSlide.module.scss";
 import Image from "next/image";
 import Button from "@/components/Button";
+import clsx from "clsx";
 
 interface ProductCarouselSlideProps {
   description: string;
@@ -15,7 +16,7 @@ const ProductCarouselSlide = ({
   productImg,
 }: ProductCarouselSlideProps) => {
   return (
-    <div className={styles.container}>
+    <div className={clsx(styles.container)}>
       <Image
         alt={productImg}
         className={styles.sectionImg}

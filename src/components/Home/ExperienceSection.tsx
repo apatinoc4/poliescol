@@ -26,6 +26,7 @@ const ExperienceSection = () => {
         alt="experienceSectionBg.png"
         className={styles.backgroundImage}
         fill
+        sizes="100%"
         src="/experienceSectionBg.png"
         style={{ objectFit: "cover" }}
       />

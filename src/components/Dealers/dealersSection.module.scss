@@ -7,11 +7,20 @@
   background-color: $light-gray;
   min-height: 100vh;
 
+  @include mobile {
+    flex-direction: column;
+  }
+
   .backgroundImg {
     position: relative;
     flex-grow: 1;
     width: 39.75rem;
     height: 68.5rem;
+
+    @include mobile {
+      height: 19.375rem;
+      width: 100%;
+    }
   }
   .contents {
     box-sizing: border-box;
@@ -20,5 +29,10 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+
+    @include mobile {
+      padding: 3rem 2rem 7.75rem 2rem;
+      width: 100%;
+    }
   }
 }

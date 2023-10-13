@@ -1,12 +1,12 @@
 "use client";
 
-import React, { useState, useMemo } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Navigation, Thumbs } from "swiper/modules";
-import "swiper/css";
 import ProductCarouselSlide from "./ProductCarouselSlide";
 import styles from "./productCarousel.module.scss";
 import { Product } from "types/products";
+import "swiper/css";
 
 interface ProductCarouselProps {
   products: Product[];
@@ -21,9 +21,11 @@ const ProductCarousel = ({
     <div className={styles.container}>
       <Swiper
         onSwiper={(swiper) => setSwiperInstance(swiper)}
+        slidesPerView={1}
         spaceBetween={10}
         navigation={true}
         modules={[FreeMode, Navigation, Thumbs]}
+        wrapperClass="product-carousel"
       >
         {products.map(({ description, name, productImg }, idx) => {
           return (

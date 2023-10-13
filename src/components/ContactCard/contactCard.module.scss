@@ -8,17 +8,27 @@
   .infoField {
     display: flex;
     margin-bottom: 0.875rem;
+    align-items: center;
+
     p,
     svg {
       color: $dark-gray;
     }
     svg {
       margin-right: 0.5rem;
+
+      @include mobile {
+        font-size: 0.9rem;
+      }
     }
 
     p {
       font-size: $pMd;
       margin: 0;
+
+      @include mobile {
+        font-size: 0.813rem;
+      }
     }
   }
 
@@ -30,5 +40,9 @@
     font-size: 1.656rem;
     margin-top: 0;
     margin-bottom: 1.625rem;
+
+    @include mobile {
+      font-size: 1.063rem;
+    }
   }
 }
