@@ -8,30 +8,58 @@
   flex-direction: row-reverse;
   justify-content: space-between;
 
+  @include mobile {
+    flex-direction: column-reverse;
+  }
+
   &.even {
     flex-direction: row;
+
+    @include mobile {
+      flex-direction: column-reverse;
+    }
   }
 
   .content {
     width: 42.25%;
+
+    @include mobile {
+      margin-top: 1.5rem;
+      width: 100%;
+    }
     p {
       font-size: $pMd;
+      @include mobile {
+        font-size: 1rem;
+      }
 
       &.body {
         max-width: 69.4%;
         margin-bottom: 1.625rem;
         margin-top: 0;
+
+        @include mobile {
+          margin-bottom: 1.125rem;
+        }
       }
       &.authorDate {
-        // max-width: 25.3%;
         color: $dark-gray;
         margin-bottom: 6rem;
+
+        @include mobile {
+          font-size: 0.75rem;
+          margin-bottom: 1.5rem;
+        }
       }
     }
     h2 {
       color: $blue;
       margin: 0;
       font-size: $titleMd;
+
+      @include mobile {
+        font-size: 1.75rem;
+      }
     }
 
     button {
@@ -44,6 +72,11 @@
     position: relative;
     width: 48%;
     height: 369px;
+
+    @include mobile {
+      height: 14.375rem;
+      width: 100%;
+    }
 
     img {
       height: 100%;

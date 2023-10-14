@@ -26,14 +26,16 @@ const AdvisorListSection = () => {
           );
         })}
       </div>
-      <div className={styles.backgroundImg}>
-        <Image
-          alt="advisorListSectionBg.jpeg"
-          fill
-          src="/advisorListSectionBg.jpeg"
-          sizes="100%"
-          style={{ objectFit: "cover" }}
-        />
+      <div className={styles.backgroundImgStickyContainer}>
+        <div className={styles.backgroundImg}>
+          <Image
+            alt="advisorListSectionBg.jpeg"
+            fill
+            src="/advisorListSectionBg.jpeg"
+            sizes="100%"
+            style={{ objectFit: "cover" }}
+          />
+        </div>
       </div>
     </section>
   );

@@ -57,6 +57,7 @@ const ProductsSection = () => {
                   backgroundImg={backgroundImg}
                   hasDeWord={hasDeWord}
                   productLabel={label}
+                  className={styles.productCard}
                 />
               );
             })}

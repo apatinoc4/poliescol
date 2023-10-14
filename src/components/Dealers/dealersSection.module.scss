@@ -11,6 +11,16 @@
     flex-direction: column;
   }
 
+  .backgroundImgStickyContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    @include mobile {
+      position: static;
+    }
+  }
+
   .backgroundImg {
     position: relative;
     flex-grow: 1;
@@ -24,10 +34,10 @@
   }
   .contents {
     box-sizing: border-box;
-    padding: 4rem 6.625rem 7.75rem 6.625rem;
-    width: 56%;
+    padding: 4rem 6.625rem 7.75rem 44%;
+    width: 100%;
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     flex-direction: column;
 
     @include mobile {

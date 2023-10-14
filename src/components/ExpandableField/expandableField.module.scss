@@ -61,6 +61,7 @@
     background-color: $gray;
     padding: 1.8rem 2.325rem;
     margin-bottom: 1.75rem;
+    overflow: hidden;
 
     @include mobile {
       padding: 0.875rem 0.75rem 0 0.75rem;

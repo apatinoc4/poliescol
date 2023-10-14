@@ -5,6 +5,7 @@
   position: relative;
   padding: 0 8.25rem;
   align-items: center;
+  z-index: 98;
 
   @include mobile {
     padding: 0;

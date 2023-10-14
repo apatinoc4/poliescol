@@ -11,11 +11,24 @@
     flex-direction: column-reverse;
   }
 
+  .backgroundImgStickyContainer {
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    &.offset {
+      top: 150px;
+    }
+
+    @include mobile {
+      position: static;
+    }
+  }
+
   .backgroundImg {
     position: relative;
-    flex-grow: 1;
     width: 39.75rem;
-    height: 68.5rem;
+    height: 100vh;
 
     @include mobile {
       height: 19.375rem;
@@ -24,10 +37,10 @@
   }
   .contents {
     box-sizing: border-box;
-    padding: 4rem 6.625rem 7.75rem 6.625rem;
-    width: 56%;
+    padding: 4rem 44% 7.75rem 6.625rem;
+    width: 100%;
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     flex-direction: column;
 
     @include mobile {

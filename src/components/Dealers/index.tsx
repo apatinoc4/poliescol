@@ -8,14 +8,16 @@ import Image from "next/image";
 const DealersSection = () => {
   return (
     <section className={styles.sectionContainer}>
-      <div className={styles.backgroundImg}>
-        <Image
-          alt="dealersSectionBg.jpeg"
-          priority
-          fill
-          src="/dealersSectionBg.jpeg"
-          style={{ objectFit: "cover" }}
-        />
+      <div className={styles.backgroundImgStickyContainer}>
+        <div className={styles.backgroundImg}>
+          <Image
+            alt="dealersSectionBg.jpeg"
+            priority
+            fill
+            src="/dealersSectionBg.jpeg"
+            style={{ objectFit: "cover" }}
+          />
+        </div>
       </div>
       <div className={styles.contents}>
         {DEALERS.map(({ id, cityName, dealers }) => {

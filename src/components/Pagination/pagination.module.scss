@@ -2,7 +2,6 @@
 
 .container {
   height: 6.875rem;
-
   align-items: center;
   position: absolute;
   width: 100%;
@@ -13,6 +12,10 @@
   justify-content: center;
   gap: 3.7rem;
 
+  @include mobile {
+    height: 4.75rem;
+  }
+
   p {
     cursor: pointer;
     color: $red;
@@ -20,6 +23,10 @@
     &.disabled {
       color: $dark-gray;
       pointer-events: none;
+    }
+
+    @include mobile {
+      font-size: 0.938rem;
     }
   }
 
@@ -33,6 +40,11 @@
       width: 0.469rem;
       border-radius: 50%;
       cursor: pointer;
+
+      @include mobile {
+        height: 0.313rem;
+        width: 0.313rem;
+      }
 
       &.currentPage {
         background-color: $red;

@@ -2,8 +2,10 @@ import Image from "next/image";
 import React from "react";
 import styles from "./productCard.module.scss";
 import { ProductLineIds } from "types/products";
+import clsx from "clsx";
 
 interface ProductCardProps {
+  className?: string;
   backgroundImg: string;
   hasDeWord?: boolean;
   productLabel: string;
@@ -13,13 +15,17 @@ interface ProductCardProps {
 
 const ProductCard = ({
   backgroundImg,
+  className,
   hasDeWord,
   productLabel,
   productLineId,
   onClick,
 }: ProductCardProps) => {
   return (
-    <div onClick={() => onClick(productLineId)} className={styles.container}>
+    <div
+      onClick={() => onClick(productLineId)}
+      className={clsx(styles.container, className)}
+    >
       <h3>
         Línea {hasDeWord && <span>de</span>}
         <br />

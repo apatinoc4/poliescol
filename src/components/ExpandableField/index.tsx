@@ -3,6 +3,7 @@ import React, { FC, PropsWithChildren, useState } from "react";
 import styles from "./expandableField.module.scss";
 import CustomIcon from "@/components/Icons";
 import clsx from "clsx";
+import { motion, AnimatePresence } from "framer-motion";
 
 interface ExpandableFieldProps {
   title: string;
@@ -15,6 +16,12 @@ const ExpandableField: FC<PropsWithChildren<ExpandableFieldProps>> = ({
   variant,
 }) => {
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
+
+  const bodyVariants = {
+    open: { opacity: 1, height: "auto" },
+    closed: { opacity: 0, height: 0 },
+  };
+
   return (
     <div className={styles.container}>
       <div
@@ -40,7 +47,20 @@ const ExpandableField: FC<PropsWithChildren<ExpandableFieldProps>> = ({
           </>
         )}
       </div>
-      {isExpanded && <div className={styles.body}>{children}</div>}
+      <AnimatePresence>
+        {isExpanded && (
+          <motion.div
+            initial="closed"
+            animate="open"
+            exit="closed"
+            variants={bodyVariants}
+            transition={{ duration: 0.5 }}
+            className={styles.body}
+          >
+            {children}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };
