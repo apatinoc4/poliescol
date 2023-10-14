@@ -37,10 +37,9 @@
   }
   .contents {
     box-sizing: border-box;
-    padding: 4rem 44% 7.75rem 6.625rem;
-    width: 100%;
+    padding: 4rem 6.625rem 7.75rem 6.625rem;
+    width: calc(100% - 39.75rem);
     display: flex;
-    // justify-content: center;
     flex-direction: column;
 
     @include mobile {
