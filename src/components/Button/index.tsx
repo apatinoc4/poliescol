@@ -6,9 +6,10 @@ interface ButtonProps {
   label: string;
   variant?: "red-font" | "red-body";
   padding?: "sm";
+  onClick?: () => void;
 }
 
-const Button = ({ label, variant, padding }: ButtonProps) => {
+const Button = ({ label, variant, padding, onClick }: ButtonProps) => {
   return (
     <button
       className={clsx(styles.button, {
@@ -17,6 +18,7 @@ const Button = ({ label, variant, padding }: ButtonProps) => {
         [styles.redBody]: variant === "red-body",
         [styles.paddingSm]: padding,
       })}
+      onClick={onClick}
     >
       {label}
     </button>
