@@ -48,6 +48,7 @@ const PostListSection = () => {
       )}
       {currentPostId && (
         <PostModal
+          setPostId={setCurrentPostId}
           postId={currentPostId}
           isOpen={isModalOpen}
           setIsOpen={setIsModalOpen}

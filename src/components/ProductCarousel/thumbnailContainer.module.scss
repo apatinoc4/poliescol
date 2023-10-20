@@ -4,46 +4,27 @@
   width: 100vw;
   background-color: $gray;
   margin-top: 2.25rem;
+  padding: 1.25rem 0 1.25rem 6rem;
+  display: flex;
+  flex-direction: row;
+
+  &.equalPadding {
+    padding: 1.25rem;
+    justify-content: center;
+    gap: 1.25rem;
+  }
+
+  img {
+    background-color: white;
+    height: 5.375rem;
+    width: 5.375rem;
+    padding: 0.5rem;
+  }
 
   @include mobile {
-    margin-top: 3.25rem;
-  }
-
-  .desktop {
-    display: flex;
-    justify-content: center;
-    gap: 1.375rem;
-    padding: 1rem 0;
-    box-sizing: border-box;
-    img {
-      background-color: white;
-      padding: 0.625rem;
-    }
-
-    @include mobile {
-      display: none;
-    }
-  }
-
-  .mobile {
-    display: none;
     padding: 1.25rem 0 1.25rem 1.25rem;
-
-    &.equalPadding {
-      padding: 1.25rem;
-      justify-content: center;
-      gap: 1.25rem;
-    }
-
-    img {
-      background-color: white;
-      height: 5.375rem;
-      width: 5.375rem;
-      padding: 0.5rem;
-    }
-
-    @include mobile {
-      display: flex;
-    }
+    margin-top: 3.25rem;
+    margin-bottom: 3.75rem;
+    margin-left: 0;
   }
 }

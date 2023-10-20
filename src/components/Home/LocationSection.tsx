@@ -64,7 +64,7 @@ const LocationSection = () => {
   return (
     <section>
       <SubHeader
-        backgroundImg="warehouseBg.jpeg"
+        backgroundImg="wareHouseBg.png"
         title="Encuentra nuestro punto físico"
         variant="section"
       />

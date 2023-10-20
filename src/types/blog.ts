@@ -13,6 +13,11 @@ type LinkItem = {
   templated?: boolean;
 };
 
+type adjacentPost = {
+  title: string;
+  id: number;
+};
+
 export type Post = {
   id: number;
   date: string;
@@ -56,4 +61,6 @@ export type Post = {
     "wp:term": LinkItem[];
     curies: LinkItem[];
   };
+  prevPost?: adjacentPost;
+  nextPost?: adjacentPost;
 };

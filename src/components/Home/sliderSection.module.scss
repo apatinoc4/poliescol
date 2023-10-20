@@ -7,6 +7,10 @@
   position: relative;
   justify-content: center;
 
+  @include tablet {
+    height: 13.375rem;
+  }
+
   @include mobile {
     height: 15.625rem;
   }

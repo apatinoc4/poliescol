@@ -48,6 +48,24 @@ export const PRODUCTS: ProductMap = {
       description:
         "La aparición de defectos en medio del proceso de recuperación estética puede ser evitados, no es una tarea sencilla, pero a su vez no representa...",
     },
+    {
+      productImg: "putty-rocadura.png",
+      name: "Roca Dura",
+      description:
+        "La aparición de defectos en medio del proceso de recuperación estética puede ser evitados, no es una tarea sencilla, pero a su vez no representa...",
+    },
+    {
+      productImg: "putty-blanca.png",
+      name: "Blanca",
+      description:
+        "La aparición de defectos en medio del proceso de recuperación estética puede ser evitados, no es una tarea sencilla, pero a su vez no representa...",
+    },
+    {
+      productImg: "putty-2klite.png",
+      name: "2k-Lite",
+      description:
+        "La aparición de defectos en medio del proceso de recuperación estética puede ser evitados, no es una tarea sencilla, pero a su vez no representa...",
+    },
   ],
   [ProductLineIds.Architectural]: [
     {

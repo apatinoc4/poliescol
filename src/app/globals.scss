@@ -37,13 +37,20 @@ $pcHeight: 16.875rem;
 $subHeaderHeight: 8.25rem;
 
 //breakpoints
-$desktop: 1024px;
-
+$desktop: 1194px;
+$tablet: 800px;
+$mobile: 500px;
 //header
 $mobileHeaderHeight: 3.95rem;
 
 @mixin mobile {
-  @media (max-width: #{$desktop}) {
+  @media (max-width: #{$mobile}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $mobile) and (max-width: $desktop) {
     @content;
   }
 }

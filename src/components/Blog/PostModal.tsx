@@ -14,9 +14,15 @@ interface PostModalProps {
   postId: number;
   isOpen: boolean;
   setIsOpen: (isOpen: boolean) => void;
+  setPostId: (postId: number) => void;
 }
 
-const PostModal = ({ isOpen, setIsOpen, postId }: PostModalProps) => {
+const PostModal = ({
+  isOpen,
+  setIsOpen,
+  postId,
+  setPostId,
+}: PostModalProps) => {
   const { post } = useFetchSinglePost(postId);
   const [isChangingPost, setIsChangingPost] = useState<boolean>(false);
 
@@ -73,6 +79,30 @@ const PostModal = ({ isOpen, setIsOpen, postId }: PostModalProps) => {
                 </p>
                 <div className={styles.article}>
                   {parse(post?.content.rendered as string)}
+                </div>
+                <div
+                  className={clsx(styles.postNavigation, {
+                    [styles.noPrev]: !post?.prevPost?.id,
+                    [styles.noNext]: !post?.nextPost?.id,
+                  })}
+                >
+                  {post.prevPost?.id && (
+                    <div
+                      className={clsx(styles.navigate, styles.prev)}
+                      onClick={() => setPostId(post.prevPost?.id as number)}
+                    >
+                      <p>Anterior</p>
+                      <p>{post?.prevPost?.title}</p>
+                    </div>
+                  )}
+                  {post?.nextPost?.id && (
+                    <div className={clsx(styles.navigate, styles.next)}>
+                      <p onClick={() => setPostId(post.nextPost?.id as number)}>
+                        Siguiente
+                      </p>
+                      <p>{post?.nextPost?.title}</p>
+                    </div>
+                  )}
                 </div>
               </div>
             </>

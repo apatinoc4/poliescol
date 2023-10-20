@@ -12,11 +12,21 @@
   overflow: hidden;
   flex-direction: column;
 
+  @include tablet {
+    width: 13rem;
+    height: 15.625rem;
+    padding-bottom: 0.719rem;
+  }
+
   p {
     color: white;
     font-size: $pMd;
     z-index: 1;
     margin: 0;
+
+    @include tablet {
+      font-size: 1rem;
+    }
   }
 
   .backgroundImage {

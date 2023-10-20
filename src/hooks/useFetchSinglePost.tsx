@@ -12,8 +12,25 @@ export const useFetchSinglePost = (postId: number) => {
         const postRes = await fetch(`${BASE_URL}posts/${postId}`);
         const postData = await postRes.json();
 
+        const postsList = await fetch(`${BASE_URL}posts`);
+        const postsListData = await postsList.json();
+
         const authorRes = await fetch(`${BASE_URL}users?id=${postData.author}`);
         const authorData = await authorRes.json();
+
+        const postIndex = postsListData.indexOf(
+          postsListData.find((post: Post) => post.id === postData.id)
+        );
+
+        const prevPost = {
+          title: postsListData[postIndex - 1]?.title.rendered,
+          id: postsListData[postIndex - 1]?.id,
+        };
+
+        const nextPost = {
+          title: postsListData[postIndex + 1]?.title.rendered,
+          id: postsListData[postIndex + 1]?.id,
+        };
 
         const mediaRes = await fetch(
           `${BASE_URL}media/${postData.featured_media}`
@@ -24,6 +41,8 @@ export const useFetchSinglePost = (postId: number) => {
           ...postData,
           author: authorData[0]?.name,
           featured_media: mediaData?.guid?.rendered,
+          prevPost,
+          nextPost,
         });
 
         setLoading(false);

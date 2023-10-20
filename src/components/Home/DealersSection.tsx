@@ -43,11 +43,11 @@ const DealersSection = () => {
         <div className={styles.backgroundStripe}>
           <div className={styles.tlCover}></div>
           <Image
-            alt="warehouseBg.jpeg"
+            alt="wareHouseBg.png"
             className={styles.backgroundImage}
             fill
             sizes="100%"
-            src="/warehouseBg.jpeg"
+            src="/wareHouseBg.png"
             style={{ objectFit: "cover" }}
           />
         </div>

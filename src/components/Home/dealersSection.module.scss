@@ -1,12 +1,18 @@
 @import "@/app/globals.scss";
 
 $sectionHeight: 47.625rem;
+$sectionHeightTablet: 37.5rem;
 
 .sectionContainer {
   box-sizing: border-box;
   margin: 0;
   background-color: white;
   height: $sectionHeight;
+
+  @include tablet {
+    height: $sectionHeightTablet;
+    padding-bottom: 4.5rem;
+  }
 
   @include mobile {
     height: max-content;
@@ -34,6 +40,11 @@ $sectionHeight: 47.625rem;
       font-weight: lighter;
       margin: 0;
 
+      @include tablet {
+        margin-bottom: 0.75rem;
+        font-size: 2.25rem;
+      }
+
       @include mobile {
         font-size: 2rem;
       }
@@ -43,6 +54,10 @@ $sectionHeight: 47.625rem;
       max-width: 36.25rem;
       margin: 0;
       font-size: $pMd;
+
+      @include tablet {
+        font-size: 1.125rem;
+      }
 
       @include mobile {
         font-size: 1rem;
@@ -68,6 +83,10 @@ $sectionHeight: 47.625rem;
       height: $sectionHeight / 4;
       transform: translateY(-75%);
 
+      @include tablet {
+        height: $sectionHeightTablet / 4;
+      }
+
       .tlCover {
         display: flex;
         z-index: 0;
@@ -79,6 +98,10 @@ $sectionHeight: 47.625rem;
         background-color: $red;
         opacity: 0.7;
         z-index: 1;
+
+        @include tablet {
+          height: $sectionHeightTablet / 4;
+        }
       }
 
       .backgroundImage {
@@ -95,6 +118,11 @@ $sectionHeight: 47.625rem;
       transform: translateY(-3rem);
       position: relative;
       z-index: 2;
+
+      @include tablet {
+        gap: 3rem;
+        transform: translateY(-1.5rem);
+      }
 
       @include mobile {
         align-items: center;

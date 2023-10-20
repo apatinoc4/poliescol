@@ -101,12 +101,12 @@ $headerHeightMobile: 14.875rem;
 
     .contents {
       box-sizing: border-box;
-      padding: 3.75rem 8.75rem 10rem 5.625rem;
+      padding: 3.75rem 8.75rem 3.125rem 5.625rem;
       margin-top: $headerHeight;
       position: relative;
 
       @include mobile {
-        padding: 2rem 2.875rem 10rem 1.875rem;
+        padding: 2rem 2.875rem 1.875rem 2.875rem;
         margin-top: $headerHeightMobile;
       }
 
@@ -131,6 +131,56 @@ $headerHeightMobile: 14.875rem;
 
         @include mobile {
           font-size: 1rem;
+        }
+      }
+
+      .postNavigation {
+        margin-top: 7.875rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        @include mobile {
+          margin-top: 4rem;
+        }
+
+        .navigate {
+          :first-child {
+            color: $red;
+            font-size: 1.25rem;
+            cursor: pointer;
+            margin: 0;
+
+            @include mobile {
+              font-size: 1.125rem;
+            }
+          }
+
+          :last-child {
+            margin-top: 0.5rem;
+            color: $dark-gray;
+            font-size: 1.125rem;
+            max-width: 11.875rem;
+
+            @include mobile {
+              font-size: 0.725rem;
+            }
+          }
+
+          &.prev {
+            text-align: start;
+          }
+
+          &.next {
+            text-align: end;
+          }
+        }
+
+        &.noPrev {
+          justify-content: flex-end;
+        }
+        &.noNext {
+          justify-content: flex-start;
         }
       }
     }

@@ -13,9 +13,8 @@ import { ProductLineIds } from "types/products";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import CustomIcon from "@/components/Icons";
 import { PRODUCTS, PRODUCT_LINES } from "constants/products";
-import ThumbnailControl from "@/components/ProductCarousel/ThumbnailControl";
 import CardCarousel from "@/components/CardCarousel";
-import ThumbnailContainer from "../ProductCarousel/ThumbnailContainer";
+import ThumbnailContainer from "@/components/ProductCarousel/ThumbnailContainer";
 
 const ProductsSection = () => {
   const [isDisplayingDetail, setIsDisplayingDetail] = useState<boolean>(false);
