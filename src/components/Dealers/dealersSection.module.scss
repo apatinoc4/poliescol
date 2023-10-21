@@ -50,6 +50,10 @@
       margin-top: calc(20rem + $stickyHeaderPadding);
     }
 
+    @include mobile {
+      margin-top: calc(8rem + $stickyHeaderPadding);
+    }
+
     @include mobile-and-tablet {
       background-color: $light-gray;
       z-index: 2;
