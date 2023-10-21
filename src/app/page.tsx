@@ -15,7 +15,7 @@ export default function Home() {
       <ExperienceSection />
       <ProductSection />
       <DealersSection />
-      <ContactAdviserSection />
+      <ContactAdviserSection landing />
       <LocationSection />
     </Layout>
   );

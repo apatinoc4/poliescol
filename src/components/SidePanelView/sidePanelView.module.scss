@@ -21,7 +21,18 @@
     flex-direction: row-reverse;
     height: 47.5rem;
 
-    @include mobile {
+    &.landing {
+      @include tablet {
+        flex-direction: row-reverse;
+        height: 47.5rem;
+      }
+      @include mobile {
+        height: max-content;
+        flex-direction: column-reverse;
+      }
+    }
+
+    @include mobile-and-tablet {
       height: max-content;
       flex-direction: column-reverse;
     }
@@ -55,7 +66,18 @@
     &.right {
       width: 44%;
 
-      @include mobile {
+      &.landing {
+        @include tablet {
+          height: 100%;
+          width: 49%;
+        }
+        @include mobile {
+          height: 34.25rem;
+          width: 100%;
+        }
+      }
+
+      @include mobile-and-tablet {
         height: 34.25rem;
         width: 100%;
       }
@@ -99,6 +121,25 @@
       &.right {
         background-color: $red-tlbg;
         padding: 7rem 8rem 7rem 9.5rem;
+
+        &.landing {
+          @include tablet {
+            padding: 5.375rem 4.75rem 5rem 5.625rem;
+          }
+          p {
+            max-width: 21.125rem;
+            margin-bottom: 0;
+          }
+
+          @include mobile {
+            padding: 6.875rem 0 0 2.375rem;
+
+            p {
+              max-width: 17.375rem;
+              margin-bottom: 6.875rem;
+            }
+          }
+        }
 
         @include mobile {
           padding: 6.875rem 0 0 2.375rem;
@@ -157,6 +198,17 @@
     width: 60%;
     height: 100%;
     background-color: $light-gray;
+
+    &.notLanding {
+      @include mobile-and-tablet {
+        width: 100%;
+        height: 22.375rem;
+
+        &.largeCover {
+          height: 27.25rem;
+        }
+      }
+    }
 
     @include mobile {
       width: 100%;

@@ -7,7 +7,7 @@
   background-color: $light-gray;
   min-height: 100vh;
 
-  @include mobile {
+  @include mobile-and-tablet {
     flex-direction: column-reverse;
   }
 
@@ -16,12 +16,8 @@
     top: 0;
     right: 0;
 
-    &.offset {
-      top: 150px;
-    }
-
-    @include mobile {
-      position: static;
+    @include mobile-and-tablet {
+      width: 100%;
     }
   }
 
@@ -30,8 +26,16 @@
     width: 39.75rem;
     height: 100vh;
 
+    @include tablet {
+      padding-top: $stickyHeaderPadding;
+      height: calc(20rem + $stickyHeaderPadding);
+    }
+
     @include mobile {
-      height: 19.375rem;
+      height: calc(19.37rem + $stickyHeaderPadding);
+    }
+
+    @include mobile-and-tablet {
       width: 100%;
     }
   }
@@ -42,7 +46,13 @@
     display: flex;
     flex-direction: column;
 
-    @include mobile {
+    @include tablet {
+      margin-top: calc(20rem + $stickyHeaderPadding);
+    }
+
+    @include mobile-and-tablet {
+      background-color: $light-gray;
+      z-index: 2;
       padding: 3rem 2rem 7.75rem 2rem;
       width: 100%;
     }

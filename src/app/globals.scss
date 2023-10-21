@@ -38,10 +38,12 @@ $subHeaderHeight: 8.25rem;
 
 //breakpoints
 $desktop: 1194px;
-$tablet: 800px;
+$tablet: 850px;
 $mobile: 500px;
 //header
 $mobileHeaderHeight: 3.95rem;
+
+$stickyHeaderPadding: calc($subHeaderHeight + $mobileHeaderHeight);
 
 @mixin mobile {
   @media (max-width: #{$mobile}) {
@@ -51,6 +53,32 @@ $mobileHeaderHeight: 3.95rem;
 
 @mixin tablet {
   @media (min-width: $mobile) and (max-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin smallerDevices {
+  @media (min-width: $mobile) and (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin mobile-and-tablet {
+  @include mobile {
+    @content;
+  }
+
+  @include tablet {
+    @content;
+  }
+}
+
+@mixin mobile-and-smallerDevices {
+  @include mobile {
+    @content;
+  }
+
+  @include smallerDevices {
     @content;
   }
 }

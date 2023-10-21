@@ -29,6 +29,10 @@
     margin: 0;
 
     @include mobile {
+      font-size: 2.25rem;
+    }
+
+    @include mobile {
       padding: 0 2.375rem;
       font-size: 2rem;
     }
@@ -37,6 +41,10 @@
   p {
     margin: 1rem 0 4.8rem 0;
     font-size: $pMd;
+
+    @include tablet {
+      font-size: 1.125;
+    }
 
     @include mobile {
       padding: 0 2.375rem;
@@ -54,6 +62,10 @@
       justify-content: center;
       box-sizing: border-box;
       gap: 3.75rem;
+
+      @include tablet {
+        gap: 3rem;
+      }
 
       .productCard {
         transition: transform 0.3s ease;
@@ -77,7 +89,7 @@
     .dropdownControls {
       position: relative;
 
-      @include mobile {
+      @include mobile-and-tablet {
         display: flex;
         align-items: center;
         max-width: 100%;
@@ -88,7 +100,7 @@
     .contents {
       width: 76.7%;
 
-      @include mobile {
+      @include mobile-and-tablet {
         width: 100%;
         padding: 0 1.875rem;
         box-sizing: border-box;

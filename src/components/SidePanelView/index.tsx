@@ -14,6 +14,7 @@ interface SidePanelViewProps {
   variant: "left" | "right";
   linkTo: string;
   coverSize?: "lg";
+  landing?: boolean;
 }
 
 const SidePanelView = ({
@@ -21,6 +22,7 @@ const SidePanelView = ({
   coverImg,
   coverSize,
   linkTo,
+  landing,
   panelImg,
   title,
   text,
@@ -31,18 +33,21 @@ const SidePanelView = ({
       className={clsx(styles.container, {
         [styles.left]: variant === "left",
         [styles.right]: variant === "right",
+        [styles.landing]: landing,
       })}
     >
       <div
         className={clsx(styles.sectionContent, {
           [styles.left]: variant === "left",
           [styles.right]: variant === "right",
+          [styles.landing]: landing,
         })}
       >
         <div
           className={clsx(styles.textContent, {
             [styles.left]: variant === "left",
             [styles.right]: variant === "right",
+            [styles.landing]: landing,
           })}
         >
           <div className={styles.text}>
@@ -72,6 +77,7 @@ const SidePanelView = ({
       <div
         className={clsx(styles.coverImage, {
           [styles.largeCover]: coverSize === "lg",
+          [styles.notLanding]: !landing,
         })}
       >
         <Image

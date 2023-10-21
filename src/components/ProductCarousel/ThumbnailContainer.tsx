@@ -28,6 +28,7 @@ const ThumbnailContainer = ({
   }, [windowWidth, productAmount]);
 
   useEffect(() => {
+    setWindowWidth(window.innerWidth);
     const handleWindowResize = () => {
       setWindowWidth(window.innerWidth);
     };
