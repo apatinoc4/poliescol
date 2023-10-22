@@ -16,7 +16,7 @@ $headerHeightMobile: 14.875rem;
   align-items: center;
   z-index: 98;
 
-  @include mobile {
+  @include mobile-and-tablet {
     box-sizing: border-box;
     padding: 2rem 0;
     z-index: 1000;
@@ -60,14 +60,14 @@ $headerHeightMobile: 14.875rem;
         border-radius: 10px;
         height: auto;
 
-        @include mobile {
+        @include mobile-and-tablet {
           max-width: 100%;
           height: auto;
         }
       }
     }
 
-    @include mobile {
+    @include mobile-and-tablet {
       height: 100%;
       width: 92.5%;
     }
@@ -94,7 +94,7 @@ $headerHeightMobile: 14.875rem;
       top: 0;
       left: 0;
 
-      @include mobile {
+      @include mobile-and-tablet {
         height: $headerHeightMobile;
       }
     }
@@ -105,7 +105,7 @@ $headerHeightMobile: 14.875rem;
       margin-top: $headerHeight;
       position: relative;
 
-      @include mobile {
+      @include mobile-and-tablet {
         padding: 2rem 2.875rem 1.875rem 2.875rem;
         margin-top: $headerHeightMobile;
       }
@@ -116,7 +116,7 @@ $headerHeightMobile: 14.875rem;
         margin: 0;
         max-width: 27.5rem;
 
-        @include mobile {
+        @include mobile-and-tablet {
           font-size: 1.75rem;
         }
       }
@@ -129,7 +129,7 @@ $headerHeightMobile: 14.875rem;
       .article {
         font-size: 1.125rem;
 
-        @include mobile {
+        @include mobile-and-tablet {
           font-size: 1rem;
         }
       }
@@ -140,7 +140,7 @@ $headerHeightMobile: 14.875rem;
         display: flex;
         justify-content: space-between;
 
-        @include mobile {
+        @include mobile-and-tablet {
           margin-top: 4rem;
         }
 
@@ -151,7 +151,7 @@ $headerHeightMobile: 14.875rem;
             cursor: pointer;
             margin: 0;
 
-            @include mobile {
+            @include mobile-and-tablet {
               font-size: 1.125rem;
             }
           }
@@ -162,7 +162,7 @@ $headerHeightMobile: 14.875rem;
             font-size: 1.125rem;
             max-width: 11.875rem;
 
-            @include mobile {
+            @include mobile-and-tablet {
               font-size: 0.725rem;
             }
           }

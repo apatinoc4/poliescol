@@ -37,16 +37,20 @@ const PostPreview = ({
   return (
     <div className={clsx(styles.container, { [styles.even]: index % 2 == 0 })}>
       <div className={styles.content}>
-        <h2>{title}</h2>
-        <p className={styles.authorDate}>
-          {author} / {formatDate(date)}
-        </p>
-        <div className={styles.body}>{parse(excerpt)}</div>
-        <Button
-          onClick={() => togglePostDetails()}
-          variant="red-body"
-          label="Leer más"
-        />
+        <div>
+          <h2>{title}</h2>
+          <p className={styles.authorDate}>
+            {author} / {formatDate(date)}
+          </p>
+        </div>
+        <div>
+          <div className={styles.body}>{parse(excerpt)}</div>
+          <Button
+            onClick={() => togglePostDetails()}
+            variant="red-body"
+            label="Leer más"
+          />
+        </div>
       </div>
       <div className={styles.postImage}>
         <Image
