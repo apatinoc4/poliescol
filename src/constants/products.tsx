@@ -100,8 +100,22 @@ export const PRODUCTS: ProductMap = {
       productImg: "waterproofing-s3.png",
       name: "Impermeabilizante Asfáltico Protector S-3",
       description:
-        "Útil para impermeabilizar superficies expuestas al agua como techos, y terrazas, también para guardabarros y baúles de vehículos para evitar la corrosión. La superficie que se va a impermeabilizar debe estar completamente seca y libre de partículas sueltas, mugre, grasas, aceites y óxidos. El secado es de una hora al tacto y 24 horas para curado total.",
+        "Útil para impermeabilizar superficies expuestas al agua como techos, y terrazas, también para guardabarros y baúles de vehículos para evitar la corrosión.",
+      instructions: (
+        <>
+          <h3>Aplicación y uso:</h3>
+          <p>
+            Útil para impermeabilizar superficies expuestas al agua como techos,
+            y terrazas, también para guardabarros y baúles de vehículos para
+            evitar la corrosión. La superficie que se va a impermeabilizar debe
+            estar completamente seca y libre de partículas sueltas, mugre,
+            grasas, aceites y óxidos. El secado es de una hora al tacto y 24
+            horas para curado total.
+          </p>
+        </>
+      ),
     },
+
     {
       productImg: "putty-rocadura.png",
       name: "Roca Dura",
@@ -159,7 +173,18 @@ export const PRODUCTS: ProductMap = {
       productImg: "putty-poliacrylT1.png",
       name: "Resina acrílica Poliacryl T1",
       description:
-        "Resina acrílica para reforzar pinturas, cemento, yeso, estuco. Es un producto que al usarse puro, forma un sello impermeable, siempre flexible, de alta adherencia, resistencia al esfuerzo mecánico y al calor. Resina acrílica para reforzar pinturas, cemento, yeso, estuco.",
+        "Resina acrílica para reforzar pinturas, cemento, yeso, estuco.",
+      instructions: (
+        <>
+          <h3>Aplicación y uso:</h3>
+          <p>
+            Es un producto que al usarse puro, forma un sello impermeable,
+            siempre flexible, de alta adherencia, resistencia al esfuerzo
+            mecánico y al calor. Resina acrílica para reforzar pinturas,
+            cemento, yeso, estuco.
+          </p>
+        </>
+      ),
     },
     {
       productImg: "putty-P-25.png",

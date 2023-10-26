@@ -30,14 +30,13 @@ const CardCarousel = ({ handleClickCard }: CardCarouselProps) => {
         modules={[Pagination, Navigation, FreeMode]}
         className="mySwiper"
       >
-        {PRODUCT_LINES.map(({ backgroundImg, hasDeWord, id, label }, idx) => {
+        {PRODUCT_LINES.map(({ backgroundImg, id, label }, idx) => {
           return (
             <SwiperSlide key={idx}>
               <ProductCard
                 onClick={handleClickCard}
                 productLineId={id}
                 backgroundImg={backgroundImg}
-                hasDeWord={hasDeWord}
                 productLabel={label}
               />
             </SwiperSlide>

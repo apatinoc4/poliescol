@@ -47,14 +47,13 @@ const ProductsSection = () => {
             rendimiento.
           </p>
           <div className={styles.productCards}>
-            {PRODUCT_LINES.map(({ backgroundImg, hasDeWord, id, label }) => {
+            {PRODUCT_LINES.map(({ backgroundImg, id, label }) => {
               return (
                 <ProductCard
                   onClick={handleClickCard}
                   productLineId={id}
                   key={id}
                   backgroundImg={backgroundImg}
-                  hasDeWord={hasDeWord}
                   productLabel={label}
                   className={styles.productCard}
                 />
