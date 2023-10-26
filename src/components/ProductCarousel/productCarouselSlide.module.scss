@@ -35,6 +35,12 @@
       width: 100%;
     }
 
+    button {
+      @include mobile {
+        margin-top: 1.125rem;
+      }
+    }
+
     .title {
       position: relative;
       h2 {
