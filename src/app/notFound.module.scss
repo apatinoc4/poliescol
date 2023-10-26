@@ -1,0 +1,56 @@
+@import "@/app/globals.scss";
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+
+  .tlBackground {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: $blue;
+    opacity: 0.9;
+  }
+
+  .contents {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 4rem);
+    position: absolute;
+    top: 0;
+    padding-top: 4rem;
+    z-index: 2;
+    color: white;
+
+    h1 {
+      margin: 0;
+      font-size: 4.125rem;
+
+      @include tablet {
+        font-size: 4.125rem;
+      }
+    }
+
+    p {
+      margin-top: 0.5rem;
+      font-size: 1.25rem;
+
+      @include mobile {
+        font-size: 1rem;
+      }
+    }
+
+    .backgroundImage {
+      z-index: 0;
+    }
+
+    @include mobile-and-tablet {
+      padding-top: $mobileHeaderHeight;
+      height: calc(100vh - $mobileHeaderHeight);
+    }
+  }
+}

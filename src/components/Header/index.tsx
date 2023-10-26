@@ -70,7 +70,9 @@ const Header = () => {
               <Link href={linkTo} key={id}>
                 <li
                   className={clsx({
-                    [styles.active]: getActivePathName(linkTo, currentPathname),
+                    [styles.active]:
+                      currentPathname &&
+                      getActivePathName(linkTo, currentPathname),
                   })}
                 >
                   {label}
@@ -98,7 +100,9 @@ const Header = () => {
                 <ListItem>
                   <ListItemText
                     className={clsx({
-                      ["active"]: getActivePathName(linkTo, currentPathname),
+                      ["active"]:
+                        currentPathname &&
+                        getActivePathName(linkTo, currentPathname),
                     })}
                     primary={label}
                   />

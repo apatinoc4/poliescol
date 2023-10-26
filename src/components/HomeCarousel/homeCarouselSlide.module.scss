@@ -6,6 +6,7 @@
   height: 100%;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   color: white;
 
   p {
@@ -18,13 +19,13 @@
     @include tablet {
       max-width: 35.625rem;
       margin-top: 0;
-      font-size: 1.125rem;
+      font-size: 1rem;
     }
 
     @include mobile {
       max-width: 20.7rem;
       margin: 0 0 1rem 0;
-      font-size: 0.875rem;
+      font-size: 0.8rem;
     }
   }
 
@@ -32,11 +33,16 @@
     font-size: $pMd;
     margin: 0;
     font-family: $futuraHv;
+    text-align: center;
+    position: relative;
+    top: -2rem;
 
     @include tablet {
       font-size: 1.125rem;
+      top: -2rem;
     }
     @include mobile {
+      top: -1rem;
       font-size: 1rem;
     }
   }

@@ -5,23 +5,31 @@
   flex-direction: row;
   width: 100%;
   height: 100%;
-  padding: 4.375rem 4.25rem 0 4.25rem;
+  padding: 2rem 4.25rem 0 4.25rem;
   box-sizing: border-box;
 
   @include tablet {
-    padding: 3.5rem 3.375rem 0 3.375rem;
+    padding: 2.5rem 3.375rem 0 3.375rem;
   }
 
   @include mobile {
-    padding: 4.69rem 1.25rem 0 1.25rem;
+    padding: 3rem 1.25rem 0 1.25rem;
+
+    :first-child {
+      &.arrowControl {
+        transform: translate(-0.6rem, 0.7rem);
+      }
+    }
+
+    :last-child {
+      &.arrowControl {
+        transform: translate(0.6rem, 0.7rem);
+      }
+    }
   }
 
   .arrowControl {
     transform: translateY(1.6rem);
-
-    @include mobile {
-      transform: translateY(0.7rem);
-    }
 
     svg {
       color: white;

@@ -1,17 +1,20 @@
+import { ReactNode } from "react";
+
 export enum ProductLineIds {
-  Putty = "pl-0",
+  Complementary = "pl-0",
   Architectural = "pl-1",
-  Waterproofing = "pl-2",
+  Automotive = "pl-2",
 }
 
 export enum ProductLineLabels {
-  Putty = "Masillas",
+  Complementary = "Complementaria",
   Architectural = "Arquitectónica",
-  Waterproofing = "Impermeabilizante",
+  Automotive = "Automotriz",
 }
 
 export type Product = {
   productImg: string;
   name: string;
   description: string;
+  instructions?: ReactNode;
 };

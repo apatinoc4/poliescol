@@ -1,0 +1,152 @@
+@import "@/app/globals.scss";
+
+$modalHeight: 39.625rem;
+
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 98;
+
+  @include mobile-and-tablet {
+    box-sizing: border-box;
+    padding: 2rem 0;
+    z-index: 1000;
+  }
+
+  &.hidden {
+    pointer-events: none;
+  }
+
+  .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
+
+  .body {
+    width: 80%;
+    height: $modalHeight;
+    z-index: 2;
+    min-height: 300px;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    overflow-y: scroll;
+    background-color: $light-gray;
+
+    @include mobile-and-tablet {
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      width: 92.5%;
+    }
+
+    @include mobile {
+      padding-bottom: 4rem;
+    }
+
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+
+    .contents {
+      width: 50%;
+      box-sizing: border-box;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      height: 100%;
+      padding: 6rem 0;
+
+      @include mobile-and-tablet {
+        width: 100%;
+        padding: 0 4rem;
+      }
+
+      @include tablet {
+        height: auto;
+        padding: 0 4rem;
+      }
+
+      @include mobile {
+        padding: 2rem;
+        margin-top: 7rem;
+      }
+
+      .title {
+        position: relative;
+        h2 {
+          color: $blue;
+          font-size: $titleMd;
+
+          @include mobile {
+            padding: 0;
+            font-size: 2rem;
+          }
+        }
+        ::after {
+          background-color: $red;
+          bottom: -1.25rem;
+          content: "";
+          height: 0.25rem;
+          left: 0;
+          position: absolute;
+          width: 4.5rem;
+
+          @include mobile {
+            bottom: -0.625rem;
+          }
+        }
+      }
+
+      h3 {
+        font-size: 1.25rem;
+        margin: 1rem 0;
+        max-width: 27.5rem;
+
+        @include mobile-and-tablet {
+          font-size: 1.125rem;
+        }
+      }
+
+      .article {
+        font-size: 1.125rem;
+        margin-top: 2rem;
+        flex-grow: 1;
+
+        p {
+          margin: 0;
+
+          @include mobile-and-tablet {
+            padding: 0;
+          }
+        }
+
+        @include mobile-and-tablet {
+          font-size: 1rem;
+        }
+      }
+
+      @include tablet {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

@@ -71,7 +71,6 @@ const PostModal = ({
                   style={{ objectFit: "cover" }}
                 />
               </div>
-              {/* <div className={styles.scrollIndicator}></div> */}
               <div className={styles.contents}>
                 <h3>{post?.title.rendered}</h3>
                 <p className={styles.authorDate}>

@@ -19,7 +19,7 @@ import ThumbnailContainer from "@/components/ProductCarousel/ThumbnailContainer"
 const ProductsSection = () => {
   const [isDisplayingDetail, setIsDisplayingDetail] = useState<boolean>(false);
   const [productLine, setProductLine] = useState<ProductLineIds>(
-    ProductLineIds.Putty
+    ProductLineIds.Complementary
   );
   const [swiperInstance, setSwiperInstance] = useState<any>();
 
