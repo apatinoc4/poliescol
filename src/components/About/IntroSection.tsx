@@ -18,7 +18,7 @@ const IntroSection = () => {
           className={styles.backgroundImage}
           fill
           priority
-          src="/wareHouseBg.png"
+          src="/warehouseBg.png"
           sizes="100%"
           style={{ objectFit: "cover" }}
         />
