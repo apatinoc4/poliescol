@@ -17,4 +17,5 @@ export type Product = {
   name: string;
   description: string;
   instructions?: ReactNode;
+  shortenedName?: string;
 };

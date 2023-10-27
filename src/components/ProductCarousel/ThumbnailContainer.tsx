@@ -49,11 +49,11 @@ const ThumbnailContainer = ({
           navigation={true}
           wrapperClass="thumbnail-carousel"
         >
-          {products.map(({ productImg }, idx) => {
+          {products.map((product, idx) => {
             return (
               <SwiperSlide key={idx}>
                 <ThumbnailControl
-                  productImg={productImg}
+                  product={product}
                   swiperInstance={swiperInstance}
                   idx={idx}
                 />
@@ -62,18 +62,18 @@ const ThumbnailContainer = ({
           })}
         </Swiper>
       ) : (
-        <>
-          {products.map(({ productImg }, idx) => {
+        <div>
+          {products.map((product, idx) => {
             return (
               <ThumbnailControl
                 key={idx}
-                productImg={productImg}
+                product={product}
                 swiperInstance={swiperInstance}
                 idx={idx}
               />
             );
           })}
-        </>
+        </div>
       )}
     </div>
   );

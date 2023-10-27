@@ -1,5 +1,4 @@
 import React from "react";
-import SubHeader from "@/components/SubHeader";
 import Image from "next/image";
 import styles from "./introSection.module.scss";
 

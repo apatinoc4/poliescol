@@ -1,7 +1,36 @@
+@import "@/app/globals.scss";
+
 .container {
   cursor: pointer;
 
+  .tooltip {
+    position: relative;
+    top: 93px;
+    left: -0.25rem;
+    z-index: 99;
+    width: 93px;
+    background-color: white;
+    opacity: 0;
+    transition: opacity 1000ms, top 500ms ease-out;
+    margin-bottom: 1rem;
+    padding: 0 0.5rem;
+    font-size: 0.8rem;
+    text-align: center;
+
+    &.isHovering {
+      left: -0.25rem;
+      top: 0;
+      opacity: 1;
+    }
+
+    @include mobile-and-tablet {
+      display: none;
+    }
+  }
+
   img {
+    position: relative;
+    z-index: 100;
     &:hover {
       transform: scale(1.1);
     }

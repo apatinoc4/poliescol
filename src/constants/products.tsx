@@ -32,7 +32,8 @@ export const PRODUCTS: ProductMap = {
     },
     {
       productImg: "resin-p-2002.png",
-      name: "Resinas precalentadas p-2000",
+      name: "Resinas precalentadas p-2002",
+      shortenedName: "P-2002",
       description:
         "La Resina P-2000 y P-2002 es una resina poliéster no saturada de tipo ortoftálico modificado, semirígida, de media reactividad y baja viscosidad, disuelta en estireno. La Resina P-2000 se suministra pre-acelerada y tixotrópica.",
       instructions: (
@@ -50,6 +51,7 @@ export const PRODUCTS: ProductMap = {
     {
       productImg: "resin-p-2000.png",
       name: "Resinas precalentadas p-2000",
+      shortenedName: "P-2000",
       description:
         "La Resina P-2000 y P-2002 es una resina poliéster no saturada de tipo ortoftálico modificado, semirígida, de media reactividad y baja viscosidad, disuelta en estireno. La Resina P-2000 se suministra pre-acelerada y tixotrópica.",
       instructions: (
@@ -67,6 +69,7 @@ export const PRODUCTS: ProductMap = {
     {
       productImg: "misc-cremapulidora2.png",
       name: "Crema pulidora #2",
+      shortenedName: "Pulidora #2",
       description:
         "Este producto es un compuesto abrasivo a base de agua de corte (agresividad) medio formulado para remover rayas de lijas 1500 y 2000. Puede ser utilizado en todo tipo de pintura (esmaltes, lacas, poliuretanos) seco o curado y deja un acabado brillante. Se puede aplicar a mano o con máquina.",
     },
@@ -93,12 +96,14 @@ export const PRODUCTS: ProductMap = {
     {
       productImg: "architecture-impecryl.png",
       name: "Impecryl Arquitectónico",
+      shortenedName: "Impecryl",
       description:
         "Útil como protector impermeabilizante, anticorrosivo e insonorizante en superficies expuestas a la intemperie, como cubiertas de zinc, galvanizadas, eternit y tejas de barro, techos metálicos o en material. y terrazas, adobe y cemento al aire, bajantes y canoas, pisos Es útil para impermeabilizar maderas con exposición al agua. En aplicaciones de cemento se puede mezclar un galón por cada bulto de cemento. (30-50 Kg.). Para morteros, pisos terrazas",
     },
     {
       productImg: "waterproofing-s3.png",
       name: "Impermeabilizante Asfáltico Protector S-3",
+      shortenedName: "Protector S-3",
       description:
         "Útil para impermeabilizar superficies expuestas al agua como techos, y terrazas, también para guardabarros y baúles de vehículos para evitar la corrosión.",
       instructions: (
@@ -115,7 +120,6 @@ export const PRODUCTS: ProductMap = {
         </>
       ),
     },
-
     {
       productImg: "putty-rocadura.png",
       name: "Roca Dura",
@@ -149,6 +153,7 @@ export const PRODUCTS: ProductMap = {
     {
       productImg: "misc-removedorpintura.png",
       name: "Removedor de Pinturas",
+      shortenedName: "Removedor",
       description: "Remueve lacas, esmaltes y casi toda clase de pinturas.",
       instructions: (
         <>
@@ -172,6 +177,7 @@ export const PRODUCTS: ProductMap = {
     {
       productImg: "putty-poliacrylT1.png",
       name: "Resina acrílica Poliacryl T1",
+      shortenedName: "Poliacryl T1",
       description:
         "Resina acrílica para reforzar pinturas, cemento, yeso, estuco.",
       instructions: (
@@ -213,6 +219,7 @@ export const PRODUCTS: ProductMap = {
     {
       productImg: "waterproofing-impecryl.png",
       name: "Impermeabilizante vehicular flexible Impecryl",
+      shortenedName: "Impecryl",
       description: "Protector impermeabilizante flexible de alta adherencia.",
       instructions: (
         <>
