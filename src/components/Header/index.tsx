@@ -37,7 +37,7 @@ const NAV_SECTIONS = [
   },
   {
     id: "advisors",
-    label: "Miembros",
+    label: "Asesores",
     linkTo: "/asesores",
   },
 ];
