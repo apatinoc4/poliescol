@@ -6,14 +6,19 @@ export const DEALERS = [
     cityName: "Bogotá",
     dealers: [
       {
-        name: "Nombre del Distribuidor",
-        phone: "+57 316 8340926",
-        address: "Cl 79B Sur # 50-150",
+        name: "Ferrijam",
+        phone: "+57 302 8597781",
+        address: "Tv 78 d 71 d 16 sur bosa Carlos Alban",
       },
       {
-        name: "Nombre del Distribuidor",
-        phone: "+57 316 8340926",
-        address: "Cl 79B Sur # 50-150",
+        name: "Heco Multimarcas SAS",
+        phone: "+57 310 8549051",
+        address: "Calle 141 45-33",
+      },
+      {
+        name: "Pinturas Multitonos",
+        phone: "+57 310 4817571",
+        address: "Calle 15 53-20",
       },
     ],
   },
@@ -22,9 +27,14 @@ export const DEALERS = [
     cityName: "Barranquilla",
     dealers: [
       {
-        name: "Nombre del Distribuidor",
-        phone: "+57 316 8340926",
-        address: "Cl 79B Sur # 50-150",
+        name: "Grupo Pep",
+        phone: "+57 317 6416909",
+        address: "CR 44 57-58 barrio Bostón",
+      },
+      {
+        name: "Suministros Ardila",
+        phone: "+57 300 8580948",
+        address: "Calle 84 81-06 barrio San Salvador",
       },
     ],
   },
@@ -33,9 +43,19 @@ export const DEALERS = [
     cityName: "Bucaramanga",
     dealers: [
       {
-        name: "Nombre del Distribuidor",
-        phone: "+57 316 8340926",
-        address: "Cl 79B Sur # 50-150",
+        name: "Motoreste Motors",
+        phone: "+57 313 4590956",
+        address: "No. 91–55 Autopista a Floridablanca",
+      },
+      {
+        name: "Distribuidora Terinsa",
+        phone: "+57 316 4664543",
+        address: "Cr 15 21-46 barrio Granada",
+      },
+      {
+        name: "Pintumezclas Colombia",
+        phone: "+57 315 3771248",
+        address: "Cr 15 15 – 20",
       },
     ],
   },
@@ -44,9 +64,24 @@ export const DEALERS = [
     cityName: "Cartagena",
     dealers: [
       {
-        name: "Nombre del Distribuidor",
-        phone: "+57 316 8340926",
-        address: "Cl 79B Sur # 50-150",
+        name: "Almacen y Ferreteria Pemel",
+        phone: "+57 316 2543189",
+        address: "Carretera Troncal # 82-225, Barrio Villa del Sol",
+      },
+      {
+        name: "Pinturas Davinci",
+        phone: "+57 300 5297289",
+        address: "Carretera Troncal # 82-225, Barrio Villa del Sol",
+      },
+      {
+        name: "Materiales Yoly’s",
+        phone: "6766986/6744024",
+        address: "Carretera Troncal # 82-225, Barrio Villa del Sol",
+      },
+      {
+        name: "Comercializadora el Pintor",
+        phone: "+57 317 4311041",
+        address: "Carretera Troncal # 82-225, Barrio Villa del Sol",
       },
     ],
   },
@@ -55,9 +90,14 @@ export const DEALERS = [
     cityName: "Cucuta",
     dealers: [
       {
-        name: "Nombre del Distribuidor",
-        phone: "+57 316 8340926",
-        address: "Cl 79B Sur # 50-150",
+        name: "La Quimica del Color",
+        phone: "+57 318 3891209",
+        address: "Cl 4 7 93 Brr Callejon",
+      },
+      {
+        name: "El Punto del Color",
+        phone: "+57 318 6566985",
+        address: "Cl 0 B N 7 A 16 LC 14 Barrio Sevilla",
       },
     ],
   },
@@ -66,9 +106,19 @@ export const DEALERS = [
     cityName: "Cali",
     dealers: [
       {
-        name: "Nombre del Distribuidor",
-        phone: "+57 316 8340926",
-        address: "Cl 79B Sur # 50-150",
+        name: "Gustavo Adolfo Chito",
+        phone: "+57 320 7573721",
+        address: "CL 26 B # 33 A 20 Barrio El Jardin",
+      },
+      {
+        name: "Martillo Distribuidor Mayorista",
+        phone: "+57 321 7671698",
+        address: "CL 10 11 16",
+      },
+      {
+        name: "Color Special",
+        phone: "+57 301 4080853",
+        address: "CALLE 33 A Nº 16 - 56 Barrio La Floreta",
       },
     ],
   },
@@ -77,9 +127,19 @@ export const DEALERS = [
     cityName: "Sincelejo",
     dealers: [
       {
-        name: "Nombre del Distribuidor",
-        phone: "+57 316 8340926",
-        address: "Cl 79B Sur # 50-150",
+        name: "Ferretería Nacional",
+        phone: "+57 300 5039296",
+        address: "Cr 24 20 A 05",
+      },
+      {
+        name: "Ferri Pinturas",
+        phone: "+57 312 7160299",
+        address: "Carreera 1 nº 24 sector el ferri",
+      },
+      {
+        name: "Argemiro Luis Olmos/Pintumezclas",
+        phone: "+57 301 5597204",
+        address: "Calle 21 24-35",
       },
     ],
   },
