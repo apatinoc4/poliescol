@@ -27,6 +27,16 @@
     position: relative;
     z-index: 2;
 
+    @include desktop {
+      opacity: 1;
+      top: 0;
+      transition: $transitionAnimation;
+      &.offset {
+        top: 4rem;
+        opacity: 0;
+      }
+    }
+
     .title {
       h1 {
         font-size: 2.75rem;

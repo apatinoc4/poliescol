@@ -1,11 +1,23 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import styles from "./introSection.module.scss";
+import useIntersecting from "hooks/useIntersecting";
+import clsx from "clsx";
 
 const IntroSection = () => {
+  const [elementRef, isIntersecting] = useIntersecting({
+    threshold: 0,
+  });
   return (
     <section className={styles.container}>
-      <div className={styles.landingText}>
+      <div
+        className={clsx(styles.landingText, {
+          [styles.offset]: !isIntersecting,
+        })}
+        ref={elementRef as React.MutableRefObject<any>}
+      >
         <div className={styles.title}>
           <h1>
             Pensados para la industria automotriz, metalmecánica y constructora

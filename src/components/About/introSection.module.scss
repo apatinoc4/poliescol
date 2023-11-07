@@ -19,41 +19,55 @@
       padding: 0 2.75rem 4.875rem 2.75rem;
     }
 
-    h1,
-    p {
-      color: white;
-      z-index: 1;
-      margin: 0;
-      max-width: 47.375rem;
-    }
-
-    p {
-      font-size: $pMd;
-
-      @include tablet {
-        max-width: 36rem;
-        font-size: 1.125rem;
-      }
-      @include mobile {
-        max-width: 19.875rem;
-        font-size: 1rem;
-      }
-    }
-
-    h1 {
-      font-size: $titleMd;
-      font-family: $futuraMd;
-      font-weight: lighter;
-      max-width: 30.75rem;
-      margin-bottom: 1rem;
-
-      @include tablet {
-        max-width: 24.25rem;
-        font-size: 2.25rem;
+    .text {
+      position: relative;
+      z-index: 2;
+      h1,
+      p {
+        color: white;
+        z-index: 1;
+        margin: 0;
+        max-width: 47.375rem;
       }
 
-      @include mobile {
-        font-size: 2rem;
+      p {
+        font-size: $pMd;
+
+        @include tablet {
+          max-width: 36rem;
+          font-size: 1.125rem;
+        }
+        @include mobile {
+          max-width: 19.875rem;
+          font-size: 1rem;
+        }
+      }
+
+      h1 {
+        font-size: $titleMd;
+        font-family: $futuraMd;
+        font-weight: lighter;
+        max-width: 30.75rem;
+        margin-bottom: 1rem;
+
+        @include tablet {
+          max-width: 24.25rem;
+          font-size: 2.25rem;
+        }
+
+        @include mobile {
+          font-size: 2rem;
+        }
+      }
+
+      @include desktop {
+        opacity: 1;
+        top: 0;
+        transition: $transitionAnimation;
+        &.offset {
+          top: 4rem;
+          opacity: 0;
+        }
       }
     }
   }

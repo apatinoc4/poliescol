@@ -18,116 +18,131 @@ $sectionHeightTablet: 37.5rem;
     height: max-content;
   }
 
-  .sectionTitle {
-    display: flex;
-    height: 50%;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
+  .contents {
+    height: 100%;
 
-    @include mobile {
-      margin: 4.875rem 0;
-      height: max-content;
-      gap: 1.75rem;
-      padding: 0 2.625rem;
-    }
-
-    h2 {
-      color: $blue;
-      font-family: $futuraMd;
-      font-size: $titleMd;
-      font-weight: lighter;
-      margin: 0;
-
-      @include tablet {
-        margin-bottom: 0.75rem;
-        font-size: 2.25rem;
-      }
-
-      @include mobile {
-        font-size: 2rem;
+    @include desktop {
+      position: relative;
+      opacity: 1;
+      top: 0;
+      transition: $transitionAnimation;
+      &.offset {
+        top: 4rem;
+        opacity: 0;
       }
     }
 
-    p {
-      max-width: 36.25rem;
-      margin: 0;
-      font-size: $pMd;
-
-      @include tablet {
-        font-size: 1.125rem;
-      }
-
-      @include mobile {
-        font-size: 1rem;
-      }
-    }
-  }
-
-  .sectionCards {
-    height: 50%;
-    position: relative;
-
-    @include mobile {
-      height: max-content;
-      padding-bottom: 7.95rem;
-    }
-
-    .backgroundStripe {
-      position: absolute;
+    .sectionTitle {
       display: flex;
-      top: 50%;
-      left: 0;
-      width: 100%;
-      height: $sectionHeight / 4;
-      transform: translateY(-75%);
+      height: 50%;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
 
-      @include tablet {
-        height: $sectionHeightTablet / 4;
+      @include mobile {
+        margin: 4.875rem 0;
+        height: max-content;
+        gap: 1.75rem;
+        padding: 0 2.625rem;
       }
 
-      .tlCover {
-        display: flex;
-        z-index: 0;
+      h2 {
+        color: $blue;
+        font-family: $futuraMd;
+        font-size: $titleMd;
+        font-weight: lighter;
+        margin: 0;
+
+        @include tablet {
+          margin-bottom: 0.75rem;
+          font-size: 2.25rem;
+        }
+
+        @include mobile {
+          font-size: 2rem;
+        }
+      }
+
+      p {
+        max-width: 36.25rem;
+        margin: 0;
+        font-size: $pMd;
+
+        @include tablet {
+          font-size: 1.125rem;
+        }
+
+        @include mobile {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .sectionCards {
+      height: 50%;
+      position: relative;
+
+      @include mobile {
+        height: max-content;
+        padding-bottom: 7.95rem;
+      }
+
+      .backgroundStripe {
         position: absolute;
-        top: 0;
+        display: flex;
+        top: 50%;
         left: 0;
         width: 100%;
         height: $sectionHeight / 4;
-        background-color: $red;
-        opacity: 0.7;
-        z-index: 1;
+        transform: translateY(-75%);
 
         @include tablet {
           height: $sectionHeightTablet / 4;
         }
+
+        .tlCover {
+          display: flex;
+          z-index: 0;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: $sectionHeight / 4;
+          background-color: $red;
+          opacity: 0.7;
+          z-index: 1;
+
+          @include tablet {
+            height: $sectionHeightTablet / 4;
+          }
+        }
+
+        .backgroundImage {
+          z-index: 0;
+        }
       }
 
-      .backgroundImage {
-        z-index: 0;
-      }
-    }
+      .imageCards {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        gap: 3.725rem;
+        transform: translateY(-3rem);
+        position: relative;
+        z-index: 2;
 
-    .imageCards {
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-      justify-content: center;
-      gap: 3.725rem;
-      transform: translateY(-3rem);
-      position: relative;
-      z-index: 2;
+        @include tablet {
+          gap: 3rem;
+          transform: translateY(-1.5rem);
+        }
 
-      @include tablet {
-        gap: 3rem;
-        transform: translateY(-1.5rem);
-      }
-
-      @include mobile {
-        align-items: center;
-        flex-direction: column;
-        transform: translateY(0);
+        @include mobile {
+          align-items: center;
+          flex-direction: column;
+          transform: translateY(0);
+        }
       }
     }
   }

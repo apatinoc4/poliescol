@@ -1,15 +1,24 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import styles from "./sliderSection.module.scss";
 import Image from "next/image";
 import "swiper/css";
 import HomeCarousel from "@/components/HomeCarousel/HomeCarousel";
+import useIntersecting from "hooks/useIntersecting";
+import clsx from "clsx";
 
 const SliderSection = () => {
+  const [elementRef, isIntersecting] = useIntersecting({
+    threshold: 0.4,
+  });
+
   return (
     <div className={styles.container}>
-      <div className={styles.carousel}>
+      <div
+        ref={elementRef as React.MutableRefObject<any>}
+        className={clsx(styles.carousel, { [styles.offset]: !isIntersecting })}
+      >
         <HomeCarousel />
       </div>
       <div className={styles.transluscentBg}>

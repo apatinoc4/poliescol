@@ -45,8 +45,16 @@ $mobileHeaderHeight: 3.95rem;
 
 $stickyHeaderPadding: calc($subHeaderHeight + $mobileHeaderHeight);
 
+$transitionAnimation: opacity 500ms, top 700ms ease-out;
+
 @mixin mobile {
   @media (max-width: #{$mobile}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop) {
     @content;
   }
 }

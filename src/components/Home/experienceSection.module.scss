@@ -46,6 +46,17 @@
       padding: 0 7.5rem;
       text-align: start;
 
+      @include desktop {
+        position: relative;
+        opacity: 1;
+        top: 0;
+        transition: $transitionAnimation;
+        &.offset {
+          top: 4rem;
+          opacity: 0;
+        }
+      }
+
       @include tablet {
         width: max-content;
         padding: 0 0 0 0;

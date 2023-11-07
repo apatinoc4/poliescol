@@ -1,14 +1,25 @@
+"use client";
+
 import React from "react";
 import styles from "./experienceSection.module.scss";
 import Image from "next/image";
 import Button from "@/components/Button";
 import Link from "next/link";
+import useIntersecting from "hooks/useIntersecting";
+import clsx from "clsx";
 
 const ExperienceSection = () => {
+  const [elementRef, isIntersecting] = useIntersecting({
+    threshold: 0.4,
+  });
+
   return (
     <section className={styles.sectionContainer}>
       <div className={styles.sectionContent}>
-        <div className={styles.content}>
+        <div
+          ref={elementRef as React.MutableRefObject<any>}
+          className={clsx(styles.content, { [styles.offset]: !isIntersecting })}
+        >
           <h2>Somos una empresa especializada</h2>
           <p>
             en la producción y comercialización de compuestos especiales como:
