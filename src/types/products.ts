@@ -16,6 +16,7 @@ export type Product = {
   productImg: string;
   name: string;
   description: string;
+  pdf?: string;
   instructions?: ReactNode;
   shortenedName?: string;
 };

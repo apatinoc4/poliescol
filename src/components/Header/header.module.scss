@@ -54,6 +54,7 @@
     word-wrap: break-word;
     font-size: 1rem;
     font-family: $futuraMd;
+    transition: font-size 0.2s;
 
     &.active {
       color: $red;

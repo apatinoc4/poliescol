@@ -7,9 +7,10 @@ interface ButtonProps {
   variant?: "red-font" | "red-body";
   padding?: "sm";
   onClick?: () => void;
+  href?: string;
 }
 
-const Button = ({ label, variant, padding, onClick }: ButtonProps) => {
+const Button = ({ label, href, variant, padding, onClick }: ButtonProps) => {
   return (
     <button
       className={clsx(styles.button, {

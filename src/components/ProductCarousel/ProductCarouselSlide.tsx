@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import styles from "./productCarouselSlide.module.scss";
 import Image from "next/image";
@@ -6,6 +8,7 @@ import clsx from "clsx";
 import CustomIcon from "../Icons";
 import { Product } from "types";
 import Tooltip from "@mui/material/Tooltip";
+import useDownloader from "react-use-downloader";
 
 interface ProductCarouselSlideProps {
   product: Product;
@@ -22,6 +25,10 @@ const ProductCarouselSlide = ({
     setCurrentProduct(product);
     setIsModalOpen(true);
   };
+  const { size, elapsed, percentage, download, cancel, error, isInProgress } =
+    useDownloader();
+  const fileUrl = `/${product.pdf}`;
+  const filename = product.pdf;
   return (
     <div className={clsx(styles.container)}>
       <Image
@@ -48,7 +55,11 @@ const ProductCarouselSlide = ({
             </Tooltip>
           )}
         </div>
-        <Button variant="red-body" label="Descargar ficha técnica " />
+        <Button
+          onClick={() => download(fileUrl, filename as string)}
+          variant="red-body"
+          label="Descargar ficha técnica "
+        />
       </div>
     </div>
   );

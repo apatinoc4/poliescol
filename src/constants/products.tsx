@@ -9,6 +9,7 @@ export const PRODUCTS: ProductMap = {
     {
       productImg: "putty-polifibra.png",
       name: "Polifibra",
+      pdf: "FT_-_P7_Automotriz_1.pdf",
       description:
         "Masilla para corregir imperfecciones, defectos, grietas y hendiduras en partes de fibra de vidrio.",
       instructions: (
@@ -33,6 +34,7 @@ export const PRODUCTS: ProductMap = {
     {
       productImg: "resin-p-2002.png",
       name: "Resinas precalentadas p-2002",
+      pdf: "FT_-_P7_Automotriz_1.pdf",
       shortenedName: "P-2002",
       description:
         "La Resina P-2000 y P-2002 es una resina poliéster no saturada de tipo ortoftálico modificado, semirígida, de media reactividad y baja viscosidad, disuelta en estireno. La Resina P-2000 se suministra pre-acelerada y tixotrópica.",
@@ -51,6 +53,7 @@ export const PRODUCTS: ProductMap = {
     {
       productImg: "resin-p-2000.png",
       name: "Resinas precalentadas p-2000",
+      pdf: "FT_-_P7_Automotriz_1.pdf",
       shortenedName: "P-2000",
       description:
         "La Resina P-2000 y P-2002 es una resina poliéster no saturada de tipo ortoftálico modificado, semirígida, de media reactividad y baja viscosidad, disuelta en estireno. La Resina P-2000 se suministra pre-acelerada y tixotrópica.",
@@ -69,6 +72,7 @@ export const PRODUCTS: ProductMap = {
     {
       productImg: "misc-cremapulidora2.png",
       name: "Crema pulidora #2",
+      pdf: "FT_-_P7_Automotriz_1.pdf",
       shortenedName: "Pulidora #2",
       description:
         "Este producto es un compuesto abrasivo a base de agua de corte (agresividad) medio formulado para remover rayas de lijas 1500 y 2000. Puede ser utilizado en todo tipo de pintura (esmaltes, lacas, poliuretanos) seco o curado y deja un acabado brillante. Se puede aplicar a mano o con máquina.",
@@ -76,18 +80,21 @@ export const PRODUCTS: ProductMap = {
     {
       productImg: "misc-brillocar.png",
       name: "Brillocar",
+      pdf: "FT_-_P7_Automotriz_1.pdf",
       description:
         "Es un producto diseñado para renovar, brillar y proteger pinturas base disolventes (acrílicos, poliuretanos, lacas, esmaltes) aplicadas en superficies metálicas, fibra de vidrio o plásticas, eliminando también rayones ligeros en la superficie. Antes de aplicar la superficie debe estar libre de partículas que puedan rayarla. Tome un paño o esponja que puede ser seca o húmeda y vierta la crema, aplique por secciones presionando la esponja. Dejar secar (hasta que se vea opaco).",
     },
     {
       productImg: "putty-blanca.png",
       name: "Blanca",
+      pdf: "FT_-_P7_Automotriz_1.pdf",
       description:
         "La aparición de defectos en medio del proceso de recuperación estética puede ser evitados, no es una tarea sencilla, pero a su vez no representa...",
     },
     {
       productImg: "putty-2klite.png",
       name: "2k-Lite",
+      pdf: "FT_-_P7_Automotriz_1.pdf",
       description:
         "La aparición de defectos en medio del proceso de recuperación estética puede ser evitados, no es una tarea sencilla, pero a su vez no representa...",
     },
@@ -96,6 +103,7 @@ export const PRODUCTS: ProductMap = {
     {
       productImg: "architecture-impecryl.png",
       name: "Impecryl Arquitectónico",
+      pdf: "FT_-_P7_Automotriz_1.pdf",
       shortenedName: "Impecryl",
       description:
         "Útil como protector impermeabilizante, anticorrosivo e insonorizante en superficies expuestas a la intemperie, como cubiertas de zinc, galvanizadas, eternit y tejas de barro, techos metálicos o en material. y terrazas, adobe y cemento al aire, bajantes y canoas, pisos Es útil para impermeabilizar maderas con exposición al agua. En aplicaciones de cemento se puede mezclar un galón por cada bulto de cemento. (30-50 Kg.). Para morteros, pisos terrazas",
@@ -103,6 +111,7 @@ export const PRODUCTS: ProductMap = {
     {
       productImg: "waterproofing-s3.png",
       name: "Impermeabilizante Asfáltico Protector S-3",
+      pdf: "FT_-_P7_Automotriz_1.pdf",
       shortenedName: "Protector S-3",
       description:
         "Útil para impermeabilizar superficies expuestas al agua como techos, y terrazas, también para guardabarros y baúles de vehículos para evitar la corrosión.",
@@ -123,6 +132,7 @@ export const PRODUCTS: ProductMap = {
     {
       productImg: "putty-rocadura.png",
       name: "Roca Dura",
+      pdf: "FT_-_P7_Automotriz_1.pdf",
       description:
         "Para metalmecánica, mármol, cerrajería, perfilería y doméstico.",
       instructions: (
@@ -153,6 +163,7 @@ export const PRODUCTS: ProductMap = {
     {
       productImg: "misc-removedorpintura.png",
       name: "Removedor de Pinturas",
+      pdf: "FT_-_P7_Automotriz_1.pdf",
       shortenedName: "Removedor",
       description: "Remueve lacas, esmaltes y casi toda clase de pinturas.",
       instructions: (
@@ -177,6 +188,7 @@ export const PRODUCTS: ProductMap = {
     {
       productImg: "putty-poliacrylT1.png",
       name: "Resina acrílica Poliacryl T1",
+      pdf: "FT_-_P7_Automotriz_1.pdf",
       shortenedName: "Poliacryl T1",
       description:
         "Resina acrílica para reforzar pinturas, cemento, yeso, estuco.",
@@ -195,6 +207,7 @@ export const PRODUCTS: ProductMap = {
     {
       productImg: "putty-P-25.png",
       name: "Sellador P-25",
+      pdf: "FT_-_P7_Automotriz_1.pdf",
       description:
         "Es un producto que seca formando un sello impermeable, siempre flexible, impermeable y de alta adherencia, resistencia al esfuerzo mecánico y al calor. No se derrite.",
       instructions: (
@@ -219,6 +232,7 @@ export const PRODUCTS: ProductMap = {
     {
       productImg: "waterproofing-impecryl.png",
       name: "Impermeabilizante vehicular flexible Impecryl",
+      pdf: "FT_-_P7_Automotriz_1.pdf",
       shortenedName: "Impecryl",
       description: "Protector impermeabilizante flexible de alta adherencia.",
       instructions: (
@@ -244,6 +258,7 @@ export const PRODUCTS: ProductMap = {
     {
       productImg: "putty-poliflex.png",
       name: "Poliflex",
+      pdf: "FT_-_P7_Automotriz_1.pdf",
       description:
         "Especial para rellenar, resanar y corregir hendiduras en superficies metálicas, planas y curvas o en uniones con soldaduras, principalmente, en el sector de la reparación de latonería y pintura de vehículos, también en cerrajería y en muebles tubulares; para la industria de carrocerías metálicas y en fibra de vidrio y para la fabricación de maquinaria industrial.",
       instructions: (
@@ -269,6 +284,7 @@ export const PRODUCTS: ProductMap = {
     {
       productImg: "putty-rosada.png",
       name: "Rosada",
+      pdf: "FT_-_P7_Automotriz_1.pdf",
       description:
         "Para vehículos de alta gama Lijado en seco y húmedo – Poro cerrado.",
       instructions: (
@@ -296,6 +312,7 @@ export const PRODUCTS: ProductMap = {
     {
       productImg: "putty-kross.png",
       name: "Kross",
+      pdf: "FT_-_P7_Automotriz_1.pdf",
       description:
         "Para vehículos de alta gama. Lijado en seco y húmedo – Poro cerrado.",
       instructions: (
@@ -328,6 +345,7 @@ export const PRODUCTS: ProductMap = {
     {
       productImg: "putty-1a.png",
       name: "Nueva 1A",
+      pdf: "FT_-_P7_Automotriz_1.pdf",
       description: "Alto poder de relleno.",
       instructions: (
         <>
@@ -359,6 +377,7 @@ export const PRODUCTS: ProductMap = {
     {
       productImg: "putty-premium.png",
       name: "Premium",
+      pdf: "FT_-_P7_Automotriz_1.pdf",
       description:
         "Para vehículos de alta gama. Lijado en seco y húmedo – Poro cerrado.",
       instructions: (
@@ -391,6 +410,7 @@ export const PRODUCTS: ProductMap = {
     {
       productImg: "putty-rojarapida.png",
       name: "Roja Rápida",
+      pdf: "FT_-_P7_Automotriz_1.pdf",
       description: "Para detalles y acabados.",
       instructions: (
         <>
