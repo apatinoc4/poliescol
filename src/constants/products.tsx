@@ -284,7 +284,7 @@ export const PRODUCTS: ProductMap = {
     {
       productImg: "putty-rosada.png",
       name: "Rosada",
-      pdf: "FT_-_P7_Automotriz_1.pdf",
+      pdf: "FT_-_Masilla Rosada.pdf",
       description:
         "Para vehículos de alta gama Lijado en seco y húmedo – Poro cerrado.",
       instructions: (
@@ -312,7 +312,7 @@ export const PRODUCTS: ProductMap = {
     {
       productImg: "putty-kross.png",
       name: "Kross",
-      pdf: "FT_-_P7_Automotriz_1.pdf",
+      pdf: "FT_-_Masilla Kross.pdf",
       description:
         "Para vehículos de alta gama. Lijado en seco y húmedo – Poro cerrado.",
       instructions: (
@@ -377,7 +377,7 @@ export const PRODUCTS: ProductMap = {
     {
       productImg: "putty-premium.png",
       name: "Premium",
-      pdf: "FT_-_P7_Automotriz_1.pdf",
+      pdf: "FFT_-_Masilla Premium.pdf",
       description:
         "Para vehículos de alta gama. Lijado en seco y húmedo – Poro cerrado.",
       instructions: (

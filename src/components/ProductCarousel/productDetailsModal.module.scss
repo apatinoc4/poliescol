@@ -56,6 +56,8 @@ $modalHeight: 39.625rem;
     }
 
     @include mobile {
+      box-sizing: border-box;
+      min-height: 100%;
       padding-bottom: 4rem;
     }
 
@@ -87,7 +89,8 @@ $modalHeight: 39.625rem;
       }
 
       @include mobile {
-        padding: 2rem;
+        height: max-content;
+        padding: 2rem 2rem 10rem 2rem;
       }
 
       .title {

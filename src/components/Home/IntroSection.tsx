@@ -24,7 +24,7 @@ const IntroSection = () => {
           </h1>
         </div>
         <p>
-          somos productores de masillas, impermeabilizantes, selladores y otros
+          Somos productores de masillas, impermeabilizantes, selladores y otros
           productos complementarios con mejores especificaciones ajustadas a las
           necesidades y preferencias de nuestros clientes
         </p>

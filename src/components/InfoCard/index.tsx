@@ -1,12 +1,12 @@
 "use client";
-import React, { useState } from "react";
+import React, { ReactNode, useState } from "react";
 import styles from "./infoCard.module.scss";
 import CustomIcon from "@/components/Icons";
 import IconButton from "@mui/material/IconButton";
 
 interface InfoCardProps {
   title: string;
-  body: string;
+  body: string | ReactNode;
 }
 
 const InfoCard = ({ body, title }: InfoCardProps) => {

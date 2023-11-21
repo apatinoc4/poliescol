@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./faqSection.module.scss";
 import ExpandableField from "@/components/ExpandableField";
 import InfoCard from "@/components/InfoCard";
-import { FAQ } from "constants/faq";
+import { FAQ, POLITICS } from "constants/faq";
 
 const FaqsSection = () => {
   return (
@@ -21,7 +21,9 @@ const FaqsSection = () => {
       </div>
       <div className={styles.contents}>
         <ExpandableField title="Políticas y garantías">
-          <InfoCard title="Politica 1" body="Darlo todo" />
+          {POLITICS.map(({ title, politic }, idx) => {
+            return <InfoCard key={idx} title={title} body={politic} />;
+          })}
         </ExpandableField>
         <ExpandableField title="Preguntas frecuentes">
           {FAQ.map(({ question, answer }, idx) => {

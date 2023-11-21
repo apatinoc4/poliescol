@@ -22,7 +22,7 @@ const ExperienceSection = () => {
         >
           <h2>Somos una empresa especializada</h2>
           <p>
-            en la producción y comercialización de compuestos especiales como:
+            En la producción y comercialización de compuestos especiales como:
             masillas, impermeabilizantes y otros productos complementarios
             diseñados para satisfacer las necesidades de la industria de pintura
             automotriz, metalmecánica y constructora.
