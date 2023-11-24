@@ -9,7 +9,7 @@ export const PRODUCTS: ProductMap = {
     {
       productImg: "putty-polifibra.png",
       name: "Polifibra",
-      pdf: "FT_-_P7_Automotriz_1.pdf",
+      pdf: "FT_-_Masilla Polifibra.pdf",
       description:
         "Masilla para corregir imperfecciones, defectos, grietas y hendiduras en partes de fibra de vidrio.",
       instructions: (
@@ -34,7 +34,7 @@ export const PRODUCTS: ProductMap = {
     {
       productImg: "resin-p-2002.png",
       name: "Resinas precalentadas p-2002",
-      pdf: "FT_-_P7_Automotriz_1.pdf",
+      pdf: "FT_-_Resina Poliester2002.pdf",
       shortenedName: "P-2002",
       description:
         "La Resina P-2000 y P-2002 es una resina poliéster no saturada de tipo ortoftálico modificado, semirígida, de media reactividad y baja viscosidad, disuelta en estireno. La Resina P-2000 se suministra pre-acelerada y tixotrópica.",
@@ -345,7 +345,7 @@ export const PRODUCTS: ProductMap = {
     {
       productImg: "putty-1a.png",
       name: "Nueva 1A",
-      pdf: "FT_-_P7_Automotriz_1.pdf",
+      pdf: "FT_-_Nueva1A.pdf",
       description: "Alto poder de relleno.",
       instructions: (
         <>
