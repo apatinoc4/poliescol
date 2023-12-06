@@ -8,7 +8,7 @@ interface ContactCardProps {
   specialist?: boolean;
   name: string;
   phone: string;
-  field2: string;
+  field2?: string;
 }
 
 const formatPhone = (phone: string) =>
@@ -22,10 +22,12 @@ const ContactCard = ({ phone, field2, name, specialist }: ContactCardProps) => {
         <CustomIcon icon="filledPhone" />
         <p>{phone}</p>
       </div>
-      <div className={styles.infoField}>
-        <CustomIcon icon={specialist ? "mail" : "mapPin"} />
-        <p>{field2}</p>
-      </div>
+      {field2 && (
+        <div className={styles.infoField}>
+          <CustomIcon icon={specialist ? "mail" : "mapPin"} />
+          <p>{field2}</p>
+        </div>
+      )}
       <Link href={`https://wa.me/${formatPhone(phone)}`} target="_blank">
         <Button padding="sm" variant="red-body" label="Contactar" />
       </Link>

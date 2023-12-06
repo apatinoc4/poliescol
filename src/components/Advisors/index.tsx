@@ -14,12 +14,7 @@ const AdvisorListSection = () => {
             <ExpandableField key={id} variant title={regionName}>
               {advisors.map(({ name, phone, email }, idx) => {
                 return (
-                  <ContactCard
-                    key={`${id}-${idx}`}
-                    phone={phone}
-                    field2={email}
-                    name={name}
-                  />
+                  <ContactCard key={`${id}-${idx}`} phone={phone} name={name} />
                 );
               })}
             </ExpandableField>
