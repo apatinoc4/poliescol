@@ -40,7 +40,7 @@ export const useFetchSinglePost = (postId: number) => {
         setPost({
           ...postData,
           author: authorData[0]?.name,
-          featured_media: mediaData?.guid?.rendered,
+          featured_media: mediaData?.media_details?.sizes?.large?.source_url,
           prevPost,
           nextPost,
         });

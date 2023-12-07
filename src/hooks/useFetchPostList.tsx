@@ -37,7 +37,8 @@ export const useFetchPostsWithDetails = (page?: number) => {
             return {
               ...post,
               author: authorData[0]?.name,
-              featured_media: mediaData?.guid?.rendered,
+              featured_media:
+                mediaData?.media_details?.sizes?.large?.source_url,
             };
           })
         );
