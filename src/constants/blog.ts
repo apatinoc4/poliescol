@@ -1,1 +1,1 @@
-export const BASE_URL = "https://poliescol.com/wp-json/wp/v2/";
+export const BASE_URL = "https://blog.poliescol.com/wp-json/wp/v2/";
