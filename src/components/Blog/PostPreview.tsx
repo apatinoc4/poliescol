@@ -54,10 +54,10 @@ const PostPreview = ({
       </div>
       <div className={styles.postImage}>
         <Image
-          alt="missionVision.jpeg"
+          alt="post-image"
           className={styles.backgroundImage}
           fill
-          src={image ? image : "/missionVision.jpeg"}
+          src={image || "/missionVision.jpeg"}
           sizes="100%"
           style={{ objectFit: "cover" }}
         />
